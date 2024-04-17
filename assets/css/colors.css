@@ -1,0 +1,36 @@
+.light_blue_bg {
+  background-color: #00bbf9;
+}
+
+.fucshia_bg {
+  background-color: #e26ee5;
+}
+
+.pink_bg {
+  background-color: #ff397e;
+}
+
+.purple_bg {
+  background-color: #7e30e1;
+}
+
+@font-face {
+  font-family: "GT America";
+  src: url("../fonts/GT-America-Extended-Thin.woff");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "GT America";
+  src: url("../fonts/GT-America-Extended-Light.woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "GT America";
+  src: url("../fonts/GT-America-Extended-Bold.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "GT America";
+  src: url("../fonts/GT-America-Extended-Black.woff");
+  font-weight: 900;
+}/*# sourceMappingURL=colors.css.map */
