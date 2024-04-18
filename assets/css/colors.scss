@@ -13,6 +13,7 @@ $light_kanari: #f0e9ba;
 $light_gray: #d6ebf5;
 $lighter_gray: #e7eeec50;
 $light_cimon: #f3f8ff;
+$dark_green: #1d4943f8;
 $color-palette: (
   $light_blue,
   $light_kanari,
@@ -40,22 +41,22 @@ $border_radius: 12px;
 }
 
 @font-face {
-  font-family: "GT America";
-  src: url("../fonts/GT-America-Extended-Thin.woff");
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Extended-Thin.woff');
   font-weight: 200;
 }
 @font-face {
-  font-family: "GT America";
-  src: url("../fonts/GT-America-Extended-Light.woff");
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Extended-Light.woff');
   font-weight: 300;
 }
 @font-face {
-  font-family: "GT America";
-  src: url("../fonts/GT-America-Extended-Bold.woff");
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Extended-Bold.woff');
   font-weight: 700;
 }
 @font-face {
-  font-family: "GT America";
-  src: url("../fonts/GT-America-Extended-Black.woff");
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Extended-Black.woff');
   font-weight: 900;
 }

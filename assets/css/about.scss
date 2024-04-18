@@ -1,0 +1,143 @@
+@use './colors.scss';
+
+.about-wrapper {
+  background-color: colors.$dark_green;
+  background-image: url('../images/about/about-bg.png');
+  background-repeat: repeat-y;
+  .page_title {
+    font-size: 100%;
+    h2 {
+      font-size: 18vw;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      color: #64d87c;
+      letter-spacing: -17px;
+      margin-inline-start: -1vw;
+      white-space: nowrap;
+    }
+  }
+  .intro {
+    padding: 5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 5rem;
+    &__description {
+      color: #64d87c;
+      text-transform: uppercase;
+      font-size: 2vw;
+      max-width: 70%;
+      span {
+        font-weight: 800;
+      }
+      &:first-child {
+        width: 40%;
+      }
+    }
+    &__img {
+      position: absolute;
+      top: -100px;
+      right: 100px;
+      width: 46%;
+    }
+  }
+  .video-section {
+    display: flex;
+    height: 80vh;
+    padding: 5rem;
+    &__text {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      p {
+        color: #64d87c;
+        text-transform: uppercase;
+        font-size: 3vw;
+        font-weight: 800;
+      }
+    }
+    &__videos {
+      position: relative;
+      display: flex;
+      flex: 1;
+      .video-frame {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 5px;
+          left: 0;
+          z-index: 10;
+          background-image: url('../images/apple-iphone14pro-spaceblack-portrait.png');
+          background-size: 100% 98%;
+          transform: scale(1.036);
+          background-repeat: no-repeat;
+          @media (max-width: 575.98px) {
+            top: 3px;
+          }
+        }
+
+        video {
+          object-fit: cover;
+          border-radius: 60px;
+
+          @media (max-width: 575.98px) {
+            border-radius: 30px;
+            height: 300px;
+          }
+        }
+      }
+      .video-1,
+      .video-2 {
+        position: absolute;
+      }
+      .video-1 {
+        right: 0;
+        top: -200px;
+        z-index: 100;
+      }
+      .video-2 {
+        right: 300px;
+        top: 0;
+      }
+    }
+  }
+
+  .vision-and-mission {
+    padding: 5rem;
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    .vision,
+    .mission {
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+    }
+    .mission {
+      .title {
+        direction: rtl;
+      }
+    }
+    .title,
+    .desc {
+      color: #edfd53;
+      text-transform: uppercase;
+    }
+    .title {
+      font-weight: 800;
+      font-size: 5vw;
+      text-transform: uppercase;
+    }
+    .desc {
+      font-size: 1.5vw;
+      text-align: justify;
+      line-height: 1.5;
+    }
+  }
+}
