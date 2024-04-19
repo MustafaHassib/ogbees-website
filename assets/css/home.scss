@@ -2,6 +2,107 @@
 
 .home-wrapper {
   background-color: colors.$main_purple;
+  // background-image: url('../images/about/about-bg.png');
+  // background-repeat: repeat-y;
+  // backdrop-filter: opacity(10%);
+  .hero {
+    &__bg {
+      img {
+        width: 100%;
+      }
+    }
+    .phones {
+      &__videos {
+        position: relative;
+        display: flex;
+        flex: 1;
+        .video-frame {
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 5px;
+            left: 0;
+            z-index: 10;
+            background-image: url('../images/apple-iphone14pro-spaceblack-portrait.png');
+            background-size: 100% 98%;
+            transform: scale(1.036);
+            background-repeat: no-repeat;
+            @media (max-width: 575.98px) {
+              top: 3px;
+            }
+          }
+
+          video {
+            object-fit: cover;
+            border-radius: 60px;
+
+            @media (max-width: 575.98px) {
+              border-radius: 30px;
+              height: 300px;
+            }
+          }
+        }
+        .video-1,
+        .video-3 {
+          z-index: 1;
+        }
+        .video-2 {
+          transform: scale(1.8);
+          z-index: 2;
+        }
+      }
+    }
+
+    &__body {
+      margin-block: 4rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__title,
+      &__subtitle,
+      &__desc {
+        color: colors.$white;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      &__title {
+        font-size: 7.3vw;
+      }
+      &__subtitle {
+        font-size: 6vw;
+      }
+      &__desc {
+        font-size: 4vw;
+        font-weight: 500;
+        margin-block: 2rem;
+      }
+      &__cta {
+        all: unset;
+        cursor: pointer;
+        color: colors.$pink;
+        background-color: colors.$white;
+        border-radius: 12px;
+        padding: 1.5rem 3.5rem;
+        border: 1px solid transparent;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        @media (max-width: 575.98px) {
+          margin: auto;
+          font-size: 1rem;
+        }
+        &:hover {
+          background-color: transparent;
+          border-color: white;
+        }
+      }
+    }
+  }
   #statistics {
     display: flex;
     padding: 2rem 3rem;
@@ -131,9 +232,9 @@
   }
 
   .why-trust {
-    width: 85%;
+    width: 95%;
     margin: auto;
-    padding: 2rem;
+    padding: 2rem 0;
     @media (max-width: 575.98px) {
       width: auto;
     }

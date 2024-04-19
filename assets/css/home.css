@@ -42,6 +42,99 @@
 .home-wrapper {
   background-color: #49108b;
 }
+.home-wrapper .hero__bg img {
+  width: 100%;
+}
+.home-wrapper .hero .phones__videos {
+  position: relative;
+  display: flex;
+  flex: 1;
+}
+.home-wrapper .hero .phones__videos .video-frame {
+  position: relative;
+}
+.home-wrapper .hero .phones__videos .video-frame::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  left: 0;
+  z-index: 10;
+  background-image: url("../images/apple-iphone14pro-spaceblack-portrait.png");
+  background-size: 100% 98%;
+  transform: scale(1.036);
+  background-repeat: no-repeat;
+}
+@media (max-width: 575.98px) {
+  .home-wrapper .hero .phones__videos .video-frame::after {
+    top: 3px;
+  }
+}
+.home-wrapper .hero .phones__videos .video-frame video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 60px;
+}
+@media (max-width: 575.98px) {
+  .home-wrapper .hero .phones__videos .video-frame video {
+    border-radius: 30px;
+    height: 300px;
+  }
+}
+.home-wrapper .hero .phones__videos .video-1,
+.home-wrapper .hero .phones__videos .video-3 {
+  z-index: 1;
+}
+.home-wrapper .hero .phones__videos .video-2 {
+  transform: scale(1.8);
+  z-index: 2;
+}
+.home-wrapper .hero__body {
+  margin-block: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-wrapper .hero__body__title, .home-wrapper .hero__body__subtitle, .home-wrapper .hero__body__desc {
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.home-wrapper .hero__body__title {
+  font-size: 7.3vw;
+}
+.home-wrapper .hero__body__subtitle {
+  font-size: 6vw;
+}
+.home-wrapper .hero__body__desc {
+  font-size: 4vw;
+  font-weight: 500;
+  margin-block: 2rem;
+}
+.home-wrapper .hero__body__cta {
+  all: unset;
+  cursor: pointer;
+  color: #ff397e;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem 3.5rem;
+  border: 1px solid transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+@media (max-width: 575.98px) {
+  .home-wrapper .hero__body__cta {
+    margin: auto;
+    font-size: 1rem;
+  }
+}
+.home-wrapper .hero__body__cta:hover {
+  background-color: transparent;
+  border-color: white;
+}
 .home-wrapper #statistics {
   display: flex;
   padding: 2rem 3rem;
@@ -187,9 +280,9 @@
      object-position: top;
 }
 .home-wrapper .why-trust {
-  width: 85%;
+  width: 95%;
   margin: auto;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 @media (max-width: 575.98px) {
   .home-wrapper .why-trust {
