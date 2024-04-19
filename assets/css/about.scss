@@ -1,5 +1,63 @@
 @use './colors.scss';
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.5rem 2.5rem;
+  position: relative;
+  @media (max-width: 1199px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  &__toggle {
+    all: unset;
+    display: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 100000;
+    @media (max-width: 1199px) {
+      display: block;
+    }
+  }
+  &__wrapper {
+    transition: all 0.3s ease;
+    display: flex;
+    @media (max-width: 1199px) {
+      left: 0;
+      top: 0;
+      opacity: 0;
+      visibility: hidden;
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      background-color: colors.$main_purple;
+      z-index: 1000;
+      background-image: url('../images/logo-bg.png');
+      background-repeat: repeat-y;
+      background-size: contain;
+      background-blend-mode: color;
+    }
+    &__list {
+      &__btn {
+        font-weight: 600;
+        color: colors.$pink;
+        border: 1px solid colors.$moov;
+        padding: 0.8rem 2.5rem;
+        font-size: 19px;
+        text-transform: uppercase;
+        border-radius: colors.$border_radius;
+        cursor: pointer;
+        &:hover {
+          background-color: colors.$white;
+        }
+      }
+    }
+  }
+}
 .about-wrapper {
   background-color: colors.$dark_green;
   background-image: url('../images/about/about-bg.png');
@@ -140,100 +198,31 @@
       line-height: 1.5;
     }
   }
-
   .testimonials {
-    padding-top: 10rem;
-    margin: auto;
-    @media (max-width: 575.98px) {
-      padding-top: 1rem;
-      padding-inline: 0;
-      height: auto;
-    }
     .main_title {
-      margin-bottom: 5rem;
       h2 {
-        font-size: 6.5vw;
         color: #64d87c;
-        font-weight: 800;
-      }
-      @media (max-width: 575.98px) {
-        margin-bottom: 0;
       }
     }
-    &__list {
-      width: 50%;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: masonry;
-      grid-auto-rows: minmax(100px auto);
-      grid-gap: 20px;
-      .testimonial {
-        &:nth-child(2) {
-          margin-top: -2rem;
-        }
-        &__body {
-          padding: 3.5rem 2rem;
-          gap: 4rem;
-          flex-direction: column;
-          border-radius: 24px;
-          transition: colors.$main_transition;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: #edfd53;
-          margin-bottom: 2rem;
 
+    &__list {
+      .testimonial {
+        &__body {
+          background-color: #edfd53;
           &__desc {
-            font-style: italic;
-            line-height: 1.5;
-            position: relative;
-            z-index: 2;
             &::before {
-              content: '';
-              position: absolute;
-              top: -25px;
-              left: -10px;
               background-image: url('../images/about/dark-quote.png');
-              background-size: contain;
-              background-repeat: no-repeat;
-              z-index: -1;
-              width: 50px;
-              height: 50px;
             }
           }
           &__author {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            position: relative;
-            z-index: 2;
             &::after {
-              content: '';
-              position: absolute;
-              bottom: 10px;
-              right: 10px;
               background-image: url('../images/about/dark-quote.png');
-              background-size: contain;
-              background-repeat: no-repeat;
-              z-index: -1;
-              transform: rotate(180deg);
-
-              width: 50px;
-              height: 50px;
-            }
-            &__name {
-              font-weight: 700;
-            }
-            &__title {
-              font-weight: 200;
             }
           }
         }
       }
     }
   }
-
   .services {
     padding: 5rem;
     display: flex;
@@ -300,6 +289,27 @@
       &:hover {
         background-color: #004a43;
         color: #edfd53;
+      }
+    }
+  }
+}
+
+footer {
+  .footer-bottom {
+    border-top: 1px solid #edfd53;
+    .copyrights {
+      color: #edfd53;
+    }
+    .links {
+      a {
+        color: #edfd53;
+      }
+    }
+    .social-media {
+      svg {
+        path {
+          fill: #edfd53;
+        }
       }
     }
   }

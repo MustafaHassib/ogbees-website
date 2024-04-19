@@ -6,6 +6,7 @@ $pink: #ff397e;
 $yellow: #e9ff00;
 $kanari: #ffcf01;
 $lemon: #00ff73;
+$light_green: #00dc71;
 $light_blue: #00bbf9;
 $light_lemon: #b4e6c2;
 $light_pink: #f7e2e2;
@@ -49,6 +50,11 @@ $border_radius: 12px;
   font-family: 'GT America';
   src: url('../fonts/GT-America-Extended-Light.woff');
   font-weight: 300;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Extended-Medium.woff');
+  font-weight: 600;
 }
 @font-face {
   font-family: 'GT America';
