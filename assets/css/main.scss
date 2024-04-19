@@ -143,3 +143,40 @@ body {
     }
   }
 }
+
+footer {
+  img {
+    width: 100%;
+  }
+  .footer-bottom {
+    padding: 1.5rem 0;
+    width: calc(100% - 5rem);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border-top: 1px solid #edfd53;
+    .copyrights {
+      color: #edfd53;
+    }
+    .links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      margin-inline-end: auto;
+      a {
+        color: #edfd53;
+      }
+    }
+    .social-media {
+      display: flex;
+      gap: 3rem;
+      svg {
+        path {
+          fill: #edfd53;
+        }
+      }
+    }
+  }
+}
