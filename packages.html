@@ -14,30 +14,77 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/aboutus.css" />
+    <link rel="stylesheet" href="./assets/css/packages.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   </head>
   <body>
-    <nav class="navbar">
-      <button id="navbar-toggle" class="navbar__toggle">
-        <img src="./assets/images/Hamburger Menu.png" alt="menu-btn" />
-      </button>
-      <div class="navbar__wrapper">
-        <ul class="navbar__wrapper__list">
-          <li class="navbar__wrapper__list__item">
-            <a href="./about.html"> About us </a>
-          </li>
-          <li class="separator"></li>
-          <li class="navbar__wrapper__list__item">
-            <a href="./packages.html"> OUR PACKAGES </a>
-          </li>
-          <li class="navbar__wrapper__list__btn">book a meeting</li>
-          <li class="navbar__wrapper__list__btn">become a creator</li>
-        </ul>
+    <div class="packages-wrapper">
+      <nav class="navbar">
+        <button id="navbar-toggle" class="navbar__toggle">
+          <img src="./assets/images/Hamburger Menu.png" alt="menu-btn" />
+        </button>
+        <div class="navbar__wrapper">
+          <ul class="navbar__wrapper__list">
+            <li class="navbar__wrapper__list__item">
+              <a href="./about.html"> About us </a>
+            </li>
+            <li class="separator"></li>
+            <li class="navbar__wrapper__list__item">
+              <a href="./packages.html"> OUR PACKAGES </a>
+            </li>
+            <li class="navbar__wrapper__list__btn">book a meeting</li>
+            <li class="navbar__wrapper__list__btn">become a creator</li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="packages-wrapper__bg">
+        <img src="./assets/images/packages/packages-logo.png" alt="logo" />
       </div>
-    </nav>
+      <div class="hero">
+        <div class="hero__body">
+          <h2 class="hero__body__title">
+            <span> Turn your</span> Creativity Into <br />
+            Cash
+          </h2>
+          <p class="hero__body__desc">
+            Join our community of content creators, & start your UGC career now!
+          </p>
+          <button class="hero__body__cta">
+            Join us
+            <i class="fa-solid fa-chevron-right fa-lg"></i>
+          </button>
+        </div>
+        <div class="hero__videos">
+          <div class="video-frame video-1">
+            <video
+              autoplay="true"
+              muted
+              src="./assets/images/video-3.mp4"
+              loop
+            ></video>
+          </div>
+          <div class="video-frame video-2">
+            <video
+              autoplay="true"
+              muted
+              src="./assets/images/-4a69-4531-941c-29c549b70f75.mp4"
+              loop
+            ></video>
+          </div>
+          <div class="video-frame video-3">
+            <video
+              autoplay="true"
+              muted
+              src="./assets/images/video-2.mp4"
+              loop
+            ></video>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
@@ -49,7 +96,7 @@
 
     <script src="./assets/js/sliders-configs.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/how-it-works-animation.js"></script>
+    <script src="./assets/js/packages.js"></script>
 
     <script></script>
   </body>
