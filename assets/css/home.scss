@@ -6,16 +6,28 @@
   // background-repeat: repeat-y;
   // backdrop-filter: opacity(10%);
   .hero {
+    position: relative;
     &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
       img {
         width: 100%;
       }
     }
     .phones {
+      min-height: 100vh;
+      @media (max-width: 575.98px) {
+        min-height: auto;
+        padding-top: 35vh;
+      }
       &__videos {
         position: relative;
         display: flex;
         flex: 1;
+        justify-content: center;
         .video-frame {
           position: relative;
 
@@ -32,7 +44,7 @@
             transform: scale(1.036);
             background-repeat: no-repeat;
             @media (max-width: 575.98px) {
-              top: 3px;
+              top: 2px;
             }
           }
 
@@ -42,7 +54,7 @@
 
             @media (max-width: 575.98px) {
               border-radius: 30px;
-              height: 300px;
+              height: 250px;
             }
           }
         }
@@ -51,7 +63,6 @@
           z-index: 1;
         }
         .video-2 {
-          transform: scale(1.8);
           z-index: 2;
         }
       }
@@ -95,6 +106,7 @@
         @media (max-width: 575.98px) {
           margin: auto;
           font-size: 1rem;
+          padding: 0.5rem 2rem;
         }
         &:hover {
           background-color: transparent;
@@ -156,7 +168,7 @@
         color: colors.$pink;
         background-color: colors.$white;
         border-radius: 12px;
-        padding: 0.5rem 1rem;
+        padding: 1.5rem 3.5rem;
         border: 1px solid transparent;
         font-weight: 600;
         text-transform: uppercase;
@@ -164,6 +176,7 @@
         @media (max-width: 575.98px) {
           margin: auto;
           font-size: 1rem;
+          padding: 0.5rem 2rem;
         }
         &:hover {
           background-color: transparent;
@@ -176,55 +189,51 @@
       gap: 1.5rem;
       flex: 1;
       margin-top: 3.5rem;
+      flex-wrap: wrap;
+
       @media (max-width: 575.98px) {
-        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
       }
-      .col {
-        width: 50%;
+
+      .state {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
+        padding: 0.7rem 1rem 1rem;
+        border-radius: colors.$border_radius * 1.2;
+        text-align: center;
+        flex: 1;
         @media (max-width: 575.98px) {
-          width: 100%;
+          min-width: 100%;
+          scroll-snap-align: center;
         }
-        &.mt-1 {
-          margin-top: 4rem;
-          @media (max-width: 575.98px) {
-            margin-top: 0;
-          }
-        }
-        .state {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-          padding: 0.7rem 1rem 1rem;
-          border-radius: colors.$border_radius * 1.2;
-          text-align: center;
-          &__count {
-            line-height: 1;
-            text-transform: uppercase;
-            font-size: 7vw;
-            color: colors.$white;
-            margin-top: 1rem;
-            span {
-              font-weight: 700;
-            }
 
-            @media (max-width: 575.98px) {
-              font-size: 4vw;
-            }
+        &__count {
+          line-height: 1;
+          text-transform: uppercase;
+          font-size: 7vw;
+          color: colors.$white;
+          margin-top: 1rem;
+          span {
+            font-weight: 700;
           }
-          &__body {
-            color: colors.$white;
+
+          @media (max-width: 575.98px) {
+            font-size: 4vw;
           }
-          &__img {
-            img {
-              border-radius: colors.$border_radius;
-              height: 200px;
-              width: 100%;
-              object-fit: cover;
-              object-position: top;
-            }
+        }
+        &__body {
+          color: colors.$white;
+        }
+        &__img {
+          img {
+            border-radius: colors.$border_radius;
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
           }
         }
       }
@@ -235,23 +244,34 @@
     width: 95%;
     margin: auto;
     padding: 2rem 0;
+    display: flex;
+    gap: 0.5rem;
     @media (max-width: 575.98px) {
       width: auto;
+      flex-direction: column;
+      text-align: center;
     }
     &__title {
       color: colors.$white;
-      font-size: 10vw;
+      font-size: 5vw;
       font-weight: 700;
       text-transform: uppercase;
-      text-align: center;
-      font-style: italic;
       line-height: 1;
+      flex: 1;
       span {
         color: colors.$pink;
       }
 
       @media (max-width: 575.98px) {
-        font-size: 2rem;
+        font-size: 1.5rem;
+      }
+    }
+    &__desc {
+      color: white;
+      font-size: 2vw;
+      flex: 0.4;
+      @media (max-width: 575.98px) {
+        font-size: 1rem;
       }
     }
   }
@@ -265,7 +285,7 @@
     overflow: hidden;
     height: 30vh;
     @media (max-width: 575.98px) {
-      height: 20vh;
+      height: 40vh;
     }
     &__top {
       padding: 2rem 0;
@@ -545,11 +565,15 @@
       h2 {
         font-size: 14vw;
         color: colors.$pink;
+        @media (max-width: 575.98px) {
+          font-size: 10vw;
+        }
       }
     }
     .packages-services {
       display: flex;
       gap: 1rem;
+      overflow-x: auto;
       .package {
         height: fit-content;
         width: 25%;
@@ -558,6 +582,10 @@
         background-position: 100% 100%;
         background-repeat: no-repeat;
         padding: 1.5rem;
+        @media (max-width: 575.98px) {
+          min-width: 100%;
+          flex: 1;
+        }
         &__head {
           display: flex;
           flex-direction: column;
@@ -798,6 +826,9 @@
       .body {
         flex: 1;
         display: flex;
+        .content {
+          width: 100%;
+        }
       }
     }
   }
@@ -810,6 +841,10 @@
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    @media (max-width: 575.98px) {
+      padding: 1rem 2rem;
+      flex-direction: column;
+    }
     &__form {
       &__title {
         color: colors.$pink;
@@ -817,10 +852,18 @@
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 2rem;
+        @media (max-width: 575.98px) {
+          font-size: 2rem;
+          text-align: center;
+        }
       }
       &__sub-title {
         color: colors.$pink;
         font-size: 1vw;
+        @media (max-width: 575.98px) {
+          font-size: 0.8rem;
+          text-align: center;
+        }
       }
     }
     &__image {

@@ -6,8 +6,10 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   font-family: 'GT America';
+  overflow-x: hidden;
 }
 
 .main_title {
@@ -171,7 +173,17 @@ body {
     grid-template-rows: masonry;
     grid-auto-rows: minmax(100px auto);
     grid-gap: 20px;
+    @media (max-width: 575.98px) {
+      overflow-x: auto;
+      display: flex;
+      width: 100%;
+    }
     .testimonial {
+      gap: 1rem;
+      @media (max-width: 575.98px) {
+        display: flex;
+        min-width: 100%;
+      }
       &:nth-child(2) {
         margin-top: -2rem;
       }
@@ -269,21 +281,52 @@ footer {
     justify-content: space-between;
     gap: 2rem;
     border-top: 1px solid colors.$white;
+    @media (max-width: 575.98px) {
+      border-top: none;
+      margin-top: 2rem;
+      flex-direction: column;
+      width: 100%;
+    }
     .copyrights {
       color: colors.$white;
+      @media (max-width: 575.98px) {
+        order: 2;
+      }
     }
     .links {
       display: flex;
       gap: 2rem;
       align-items: center;
       margin-inline-end: auto;
+      padding: 0 2.5rem;
+
+      @media (max-width: 575.98px) {
+        order: 1;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
       a {
         color: colors.$white;
+        @media (max-width: 575.98px) {
+          font-size: 0.8rem;
+        }
       }
     }
     .social-media {
       display: flex;
       gap: 3rem;
+
+      @media (max-width: 575.98px) {
+        font-size: 0.8rem;
+        order: 0;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid colors.$white;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       svg {
         path {
           fill: colors.$white;
