@@ -93,9 +93,9 @@ navbarToggler.addEventListener('click', () => {
 
 // Init Gsap and Lenis
 
-window.onbeforeunload = function () {
-  window.scrollTo({ top: 0 });
-};
+// window.onbeforeunload = function () {
+//   window.scrollTo({ top: 0 });
+// };
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -222,4 +222,175 @@
 }
 .packages-wrapper .hero__videos .video-2 {
   z-index: 2;
+}
+.packages-wrapper .why-creator {
+  width: 90%;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 80px;
+  padding: 3rem;
+}
+.packages-wrapper .why-creator__title {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 7vw;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.packages-wrapper .why-creator__body {
+  display: flex;
+  gap: 2rem;
+}
+.packages-wrapper .why-creator__body .video {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.packages-wrapper .why-creator__body .video .video-frame {
+  position: relative;
+  width: 370px;
+  height: 740px;
+}
+.packages-wrapper .why-creator__body .video .video-frame::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  left: 0;
+  z-index: 10;
+  background-image: url("../images/apple-iphone14pro-spaceblack-portrait.png");
+  background-size: 100% 98%;
+  transform: scale(1.036);
+  background-repeat: no-repeat;
+}
+@media (max-width: 575.98px) {
+  .packages-wrapper .why-creator__body .video .video-frame::after {
+    top: 2px;
+  }
+}
+.packages-wrapper .why-creator__body .video .video-frame video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 60px;
+  box-shadow: 0 10px 40px black;
+  width: 370px;
+  height: 730px;
+}
+@media (max-width: 575.98px) {
+  .packages-wrapper .why-creator__body .video .video-frame video {
+    border-radius: 30px;
+    height: 250px;
+  }
+}
+.packages-wrapper .why-creator__body .video__cta {
+  all: unset;
+  cursor: pointer;
+  color: #ff397e;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 5rem;
+  border: 1px solid transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 7.5%;
+  left: 20%;
+  transform: translateX(-5%);
+  z-index: 1000;
+}
+@media (max-width: 575.98px) {
+  .packages-wrapper .why-creator__body .video__cta {
+    margin: auto;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+.packages-wrapper .why-creator__body .video__cta:hover {
+  background-color: transparent;
+  border-color: white;
+}
+.packages-wrapper .why-creator__body .checkboxes {
+  flex: 0.7;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10rem;
+}
+.packages-wrapper .why-creator__body .checkboxes:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  height: 60%;
+  border-left: 1px dashed white;
+  top: 60px;
+  z-index: 0;
+}
+.packages-wrapper .why-creator__body .checkboxes__item {
+  list-style: none;
+  padding-bottom: 1.5rem;
+  position: relative;
+  padding-inline-start: 50px;
+  margin-left: 10px;
+}
+.packages-wrapper .why-creator__body .checkboxes__item:before {
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-image: url("../images/packages/Check-Circle--Streamline-Ultimate.png");
+  background-size: cover;
+  position: absolute;
+  left: -20px;
+  top: 30px;
+}
+.packages-wrapper .why-creator__body .checkboxes__item__title {
+  color: #7e30e1;
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.packages-wrapper .why-creator__body .checkboxes__item__desc {
+  width: 80%;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.packages-wrapper .feedback {
+  padding: 5rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.packages-wrapper .feedback__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.packages-wrapper .feedback__text img {
+  width: 100%;
+}
+.packages-wrapper .feedback__body {
+  max-width: 50%;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 50px;
+  border-bottom-left-radius: 0;
+  display: flex;
+  gap: 1rem;
+}
+.packages-wrapper .feedback__body__image img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.packages-wrapper .feedback__body__feedback {
+  font-size: 3rem;
+  color: #7e30e1;
 }/*# sourceMappingURL=packages.css.map */
