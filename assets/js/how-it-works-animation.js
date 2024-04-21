@@ -76,7 +76,7 @@ mm.add('(min-width: 800px)', () => {
       '<'
     )
     .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '<')
-    .to('.title-2', { xPercent: 200, y: 0 }, '<');
+    .to('.title-2', { xPercent: 300, y: 0 }, '<');
   gsap
     .timeline({
       duration: 0.1,
@@ -138,7 +138,7 @@ mm.add('(min-width: 800px)', () => {
     .to(' #step-video', { xPercent: -75 }, '<')
     .to('.title-3', { x: -2000, y: -100 }, '<')
     .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '>')
-    .to('.title-4', { xPercent: 65, y: 0 }, '<');
+    .to('.title-4', { xPercent: 140, y: 0 }, '<');
 
   ScrollTrigger.clearScrollMemory('auto');
 });

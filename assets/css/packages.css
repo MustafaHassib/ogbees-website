@@ -348,6 +348,10 @@
   transform: none;
   height: 95vh;
 }
+.packages-wrapper .who-it-work__steps__step:last-child .who-it-work__steps__step__body {
+  padding-top: 0;
+  margin-top: -10rem;
+}
 .packages-wrapper .who-it-work__steps__step:last-child .who-it-work__steps__step__body,
 .packages-wrapper .who-it-work__steps__step:last-child .who-it-work__steps__step__img {
   transform: none;
@@ -408,6 +412,7 @@
 }
 .packages-wrapper .who-it-work__steps__step__body {
   transform: skewY(8.8deg);
+  padding-top: 5rem;
   flex: 1;
   display: flex;
   flex-direction: column;

@@ -19,6 +19,7 @@
     }
     .phones {
       min-height: 100vh;
+
       @media (max-width: 575.98px) {
         min-height: auto;
         padding-top: 35vh;
@@ -69,7 +70,7 @@
     }
 
     &__body {
-      margin-block: 4rem;
+      margin-block: 10rem;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -135,7 +136,7 @@
         width: 100%;
       }
       &__title {
-        $title-font-size: 6vw;
+        $title-font-size: 9rem;
         text-transform: uppercase;
         font-weight: 800;
         font-size: $title-font-size;
@@ -186,11 +187,10 @@
     }
     .stats {
       display: flex;
-      gap: 1.5rem;
-      flex: 1;
-      margin-top: 3.5rem;
+      gap: 1.2rem;
       flex-wrap: wrap;
 
+      flex: 1;
       @media (max-width: 575.98px) {
         flex-wrap: nowrap;
         overflow-x: scroll;
@@ -204,8 +204,8 @@
         padding: 0.7rem 1rem 1rem;
         border-radius: colors.$border_radius * 1.2;
         text-align: center;
-        flex: 1;
         @media (max-width: 575.98px) {
+          flex: 1;
           min-width: 100%;
           scroll-snap-align: center;
         }
@@ -242,10 +242,9 @@
 
   .why-trust {
     width: 95%;
-    margin: auto;
+    margin: 4rem auto;
     padding: 2rem 0;
     display: flex;
-    gap: 0.5rem;
     @media (max-width: 575.98px) {
       width: auto;
       flex-direction: column;
@@ -253,7 +252,7 @@
     }
     &__title {
       color: colors.$white;
-      font-size: 5vw;
+      font-size: 8rem;
       font-weight: 700;
       text-transform: uppercase;
       line-height: 1;
@@ -268,77 +267,10 @@
     }
     &__desc {
       color: white;
-      font-size: 2vw;
+      font-size: 3.5rem;
       flex: 0.4;
       @media (max-width: 575.98px) {
         font-size: 1rem;
-      }
-    }
-  }
-
-  .brands-slides {
-    padding-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    position: relative;
-    overflow: hidden;
-    height: 30vh;
-    @media (max-width: 575.98px) {
-      height: 40vh;
-    }
-    &__top {
-      padding: 2rem 0;
-      position: absolute;
-      background-color: colors.$fucshia;
-      width: 110%;
-      transform: skewY(3deg);
-      left: -10px;
-      top: 50px;
-      @media (max-width: 575.98px) {
-        top: 30px;
-        transform: skewY(7deg);
-      }
-    }
-
-    &__bottom {
-      position: absolute;
-      padding: 2rem 0;
-      background-color: colors.$moov;
-      transform: skewY(-5deg);
-      bottom: 90px;
-      left: -10px;
-      width: 110%;
-      @media (max-width: 575.98px) {
-        bottom: 110px;
-        transform: skewY(-10deg);
-      }
-    }
-    .splide__slide {
-      position: relative;
-      padding-inline: 1rem;
-      display: flex;
-      img {
-        width: 100px;
-        @media (max-width: 575.98px) {
-          width: 70px;
-        }
-      }
-      &:after {
-        content: '';
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        background-image: url('../images/star.png');
-        background-size: cover;
-        right: 1.5rem;
-        top: 50%;
-        transform: translateY(-50%);
-        @media (max-width: 575.98px) {
-          width: 15px;
-          height: 15px;
-          right: 0;
-        }
       }
     }
   }
@@ -445,7 +377,7 @@
           p {
             color: colors.$white;
             font-weight: 700;
-            font-size: 2vw;
+            font-size: 3.5rem;
             width: 40%;
           }
           @media (max-width: 575.98px) {

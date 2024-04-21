@@ -143,6 +143,72 @@ html {
   }
 }
 
+.brands-slides {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+  height: 30vh;
+  @media (max-width: 575.98px) {
+    height: 40vh;
+  }
+  &__top {
+    padding: 2rem 0;
+    position: absolute;
+    background-color: colors.$pink;
+    width: 110%;
+    transform: skewY(3deg);
+    left: -10px;
+    top: 120px;
+    @media (max-width: 575.98px) {
+      top: 30px;
+      transform: skewY(7deg);
+    }
+  }
+
+  &__bottom {
+    position: absolute;
+    padding: 2rem 0;
+    background-color: colors.$moov;
+    transform: skewY(-5deg);
+    bottom: 90px;
+    left: -10px;
+    width: 110%;
+    @media (max-width: 575.98px) {
+      bottom: 110px;
+      transform: skewY(-10deg);
+    }
+  }
+  .splide__slide {
+    position: relative;
+    padding-inline: 1rem;
+    display: flex;
+    img {
+      width: 100px;
+      @media (max-width: 575.98px) {
+        width: 70px;
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background-image: url('../images/star.png');
+      background-size: cover;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      @media (max-width: 575.98px) {
+        width: 15px;
+        height: 15px;
+        right: 0;
+      }
+    }
+  }
+}
 .testimonials {
   padding-top: 10rem;
   margin: auto;
