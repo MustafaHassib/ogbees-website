@@ -277,10 +277,12 @@
   display: flex;
   gap: 5rem;
   flex-direction: column;
+  margin-top: 10rem;
 }
 @media (max-width: 575.98px) {
   .about-wrapper .vision-and-mission {
     padding: 1rem;
+    margin-top: 0;
   }
 }
 .about-wrapper .vision-and-mission .vision,
