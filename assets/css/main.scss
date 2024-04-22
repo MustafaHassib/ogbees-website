@@ -121,8 +121,8 @@ html {
 
       &__btn {
         font-weight: 600;
-        color: colors.$pink;
-        border: 1px solid colors.$moov;
+        color: colors.$white;
+        border: 1px solid colors.$white;
         padding: 0.8rem 2.5rem;
         font-size: 19px;
         text-transform: uppercase;
@@ -150,9 +150,9 @@ html {
   gap: 2rem;
   position: relative;
   overflow: hidden;
-  height: 30vh;
+  height: 320px;
   @media (max-width: 575.98px) {
-    height: 40vh;
+    height: 400px;
   }
   &__top {
     padding: 2rem 0;
@@ -230,7 +230,7 @@ html {
   }
 
   &__list {
-    width: 50%;
+    width: 70%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

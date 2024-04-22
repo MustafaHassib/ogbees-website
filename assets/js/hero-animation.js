@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   mm.add('(min-width: 800px)', () => {
-    gsap.set('.video-1', { opacity: 0, scale: 0.9, yPercent: 400 });
+    gsap.set('.video-1', { opacity: 0, scale: 0.6, yPercent: 100 });
     gsap.set('.video-2', { opacity: 0, scale: 5, y: 0 });
-    gsap.set('.video-3', { opacity: 0, scale: 0.9, yPercent: 400 });
+    gsap.set('.video-3', { opacity: 0, scale: 0.6, yPercent: 100 });
     gsap
       .timeline({
         // duration: 1,
@@ -38,16 +38,16 @@ document.addEventListener('DOMContentLoaded', function () {
         duration: 1,
         scale: 1,
       })
-      .to('.video-2', { scale: 1, yPercent: 55 }, '>')
-      .to('.video-2', { scale: 1.4 }, '>')
+      .to('.video-2', { scale: 0.75, yPercent: 18 }, '>')
+      .to('.video-2', { scale: 0.9 }, '>')
       .to(
         '.video-1',
-        { opacity: 1, scale: 1.1, yPercent: 60, xPercent: 5 },
+        { opacity: 1, scale: 0.75, yPercent: 20, xPercent: 35 },
         '<'
       )
       .to(
         '.video-3',
-        { opacity: 1, scale: 1.1, yPercent: 60, xPercent: -5 },
+        { opacity: 1, scale: 0.8, yPercent: 20, xPercent: -35 },
         '<'
       );
 

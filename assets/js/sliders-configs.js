@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       640: { perPage: 2.5 },
       1200: { perPage: 3 },
-      1600: { perPage: 3.5 },
+      1600: { perPage: 5, gap: '14rem' },
     },
   });
 
