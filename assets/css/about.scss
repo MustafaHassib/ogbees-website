@@ -65,7 +65,7 @@
   .page_title {
     font-size: 100%;
     h2 {
-      font-size: 18vw;
+      font-size: 20rem;
       font-weight: 900;
       text-transform: uppercase;
       text-align: center;
@@ -73,6 +73,10 @@
       letter-spacing: -17px;
       margin-inline-start: -1vw;
       white-space: nowrap;
+      @media (max-width: 575.98px) {
+        font-size: 7rem;
+        letter-spacing: -4px;
+      }
     }
   }
   .intro {
@@ -82,29 +86,53 @@
     flex-direction: column;
     gap: 4rem;
     margin-top: 5rem;
+    margin-bottom: 5rem;
+    @media (max-width: 575.98px) {
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
     &__description {
       color: #64d87c;
       text-transform: uppercase;
-      font-size: 2vw;
+      font-size: 2rem;
       max-width: 70%;
+      @media (max-width: 575.98px) {
+        order: 1;
+        text-align: center;
+        font-size: 1.2rem;
+        max-width: 100%;
+      }
       span {
         font-weight: 800;
       }
       &:first-child {
         width: 40%;
+        @media (max-width: 575.98px) {
+          width: 100%;
+        }
       }
     }
     &__img {
       position: absolute;
-      top: -100px;
-      right: 100px;
-      width: 46%;
+      top: -7rem;
+      right: 6rem;
+      width: 600px;
+      @media (max-width: 575.98px) {
+        position: relative;
+        inset: unset;
+        width: 50%;
+        order: 0;
+        margin: auto;
+      }
     }
   }
   .video-section {
     display: flex;
-    height: 80vh;
+    height: 50vh;
     padding: 5rem;
+    @media (max-width: 575.98px) {
+      padding: 1rem;
+    }
     &__text {
       width: 50%;
       display: flex;
@@ -114,6 +142,9 @@
         text-transform: uppercase;
         font-size: 3vw;
         font-weight: 800;
+        @media (max-width: 575.98px) {
+          font-size: 1.25rem;
+        }
       }
     }
     &__videos {
@@ -122,7 +153,7 @@
       flex: 1;
       .video-frame {
         position: relative;
-
+        max-width: 300px;
         &::after {
           content: '';
           position: absolute;
@@ -143,10 +174,12 @@
         video {
           object-fit: cover;
           border-radius: 60px;
-
+          max-width: 300px;
           @media (max-width: 575.98px) {
             border-radius: 30px;
             height: 300px;
+            max-width: 200px;
+            height: 200px;
           }
         }
       }
@@ -156,12 +189,19 @@
       }
       .video-1 {
         right: 0;
-        top: -200px;
+        top: -10rem;
         z-index: 100;
+        @media (max-width: 575.98px) {
+          top: 1rem;
+        }
       }
       .video-2 {
-        right: 300px;
+        right: 150px;
         top: 0;
+        @media (max-width: 575.98px) {
+          right: 40px;
+          top: 5rem;
+        }
       }
     }
   }
@@ -171,6 +211,9 @@
     display: flex;
     gap: 5rem;
     flex-direction: column;
+    @media (max-width: 575.98px) {
+      padding: 1rem;
+    }
     .vision,
     .mission {
       display: flex;
@@ -191,17 +234,30 @@
       font-weight: 800;
       font-size: 5vw;
       text-transform: uppercase;
+      @media (max-width: 575.98px) {
+        font-size: 2.5rem;
+      }
     }
     .desc {
       font-size: 1.5vw;
       text-align: justify;
       line-height: 1.5;
+      @media (max-width: 575.98px) {
+        font-size: 1.25rem;
+      }
     }
   }
   .testimonials {
+    @media (max-width: 575.98px) {
+      padding-top: 5rem;
+    }
     .main_title {
       h2 {
         color: #64d87c;
+        @media (max-width: 575.98px) {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
       }
     }
 
@@ -228,6 +284,9 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    @media (max-width: 575.98px) {
+      padding: 1rem;
+    }
     .service {
       &__title,
       &__desc {
@@ -238,9 +297,15 @@
 
       &__title {
         font-size: 5vw;
+        @media (max-width: 575.98px) {
+          font-size: 2.5rem;
+        }
       }
       &__desc {
         font-size: 1.5vw;
+        @media (max-width: 575.98px) {
+          font-size: 1.25rem;
+        }
       }
     }
     .service-list {
@@ -249,11 +314,17 @@
       gap: 1.5rem;
       margin-top: 4rem;
       padding-inline: 5rem;
+      @media (max-width: 575.98px) {
+        padding-inline: 0;
+      }
       &__item {
         font-size: 2.5vw;
         text-transform: uppercase;
         font-weight: 800;
         color: #edfd53;
+        @media (max-width: 575.98px) {
+          font-size: 1.25rem;
+        }
       }
     }
   }
@@ -269,11 +340,17 @@
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+    @media (max-width: 575.98px) {
+      padding: 1rem;
+    }
     &__text {
       color: #64d87c;
       font-size: 2.5vw;
       text-transform: uppercase;
       font-weight: 800;
+      @media (max-width: 575.98px) {
+        font-size: 1.25rem;
+      }
     }
     &__cta {
       cursor: pointer;
@@ -286,6 +363,9 @@
       font-weight: 800;
       padding: 1rem 4rem;
       transition: all 0.1s ease;
+      @media (max-width: 575.98px) {
+        font-size: 0.8rem;
+      }
       &:hover {
         background-color: #004a43;
         color: #edfd53;

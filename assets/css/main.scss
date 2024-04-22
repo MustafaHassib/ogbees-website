@@ -152,7 +152,7 @@ html {
   overflow: hidden;
   height: 320px;
   @media (max-width: 575.98px) {
-    height: 400px;
+    height: 250px;
   }
   &__top {
     padding: 2rem 0;
@@ -213,7 +213,7 @@ html {
   padding-top: 10rem;
   margin: auto;
   @media (max-width: 575.98px) {
-    padding-top: 1rem;
+    padding-top: 20rem;
     padding-inline: 0;
     height: auto;
   }

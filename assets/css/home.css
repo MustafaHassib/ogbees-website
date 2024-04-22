@@ -117,6 +117,12 @@
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 575.98px) {
+  .home-wrapper .hero__body {
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+  }
+}
 .home-wrapper .hero__body__title, .home-wrapper .hero__body__subtitle, .home-wrapper .hero__body__desc {
   color: #ffffff;
   font-weight: 800;
@@ -125,13 +131,28 @@
 .home-wrapper .hero__body__title {
   font-size: 7.3vw;
 }
+@media (max-width: 575.98px) {
+  .home-wrapper .hero__body__title {
+    font-size: 2.5rem;
+  }
+}
 .home-wrapper .hero__body__subtitle {
   font-size: 6vw;
+}
+@media (max-width: 575.98px) {
+  .home-wrapper .hero__body__subtitle {
+    font-size: 2rem;
+  }
 }
 .home-wrapper .hero__body__desc {
   font-size: 4vw;
   font-weight: 500;
   margin-block: 2rem;
+}
+@media (max-width: 575.98px) {
+  .home-wrapper .hero__body__desc {
+    font-size: 1.5rem;
+  }
 }
 .home-wrapper .hero__body__cta {
   all: unset;
@@ -159,13 +180,13 @@
 .home-wrapper #statistics {
   display: flex;
   padding: 2rem 3rem;
-  gap: 5vw;
+  gap: 3rem;
 }
 @media (max-width: 575.98px) {
   .home-wrapper #statistics {
     flex-direction: column;
     padding-inline: 2rem;
-    gap: 0;
+    gap: 2rem;
   }
 }
 .home-wrapper #statistics .our-vision {
@@ -190,7 +211,7 @@
 }
 @media (max-width: 575.98px) {
   .home-wrapper #statistics .our-vision__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
   }
 }
@@ -201,7 +222,7 @@
 }
 @media (max-width: 575.98px) {
   .home-wrapper #statistics .our-vision__title span {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 .home-wrapper #statistics .our-vision__desc {
@@ -212,6 +233,7 @@
 @media (max-width: 575.98px) {
   .home-wrapper #statistics .our-vision__desc {
     text-align: center;
+    font-size: 1.5rem;
   }
 }
 .home-wrapper #statistics .our-vision__btn {
@@ -362,7 +384,6 @@
 @media (max-width: 575.98px) {
   .home-wrapper .steps .step,
   .home-wrapper .steps .step-how {
-    height: auto;
     padding: 3rem 2rem;
   }
 }
@@ -458,9 +479,9 @@
   width: 40%;
 }
 @media (max-width: 575.98px) {
-  .home-wrapper .steps .step__body__desc,
-  .home-wrapper .steps .step-how__body__desc {
-    display: none;
+  .home-wrapper .steps .step__body__desc p,
+  .home-wrapper .steps .step-how__body__desc p {
+    font-size: 1.3rem;
   }
 }
 .home-wrapper .steps .step__body #step-video,
@@ -472,6 +493,12 @@
 .home-wrapper .steps .step-how__body__img video {
   border-radius: 24px;
   width: 100%;
+}
+@media (max-width: 575.98px) {
+  .home-wrapper .steps .step__body__img video,
+  .home-wrapper .steps .step-how__body__img video {
+    border-radius: 12px;
+  }
 }
 .home-wrapper .testimonials .main_title h2 {
   color: #ffffff;
@@ -503,8 +530,18 @@
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 575.98px) {
+  .home-wrapper .projects .main_title h2 {
+    font-size: 3rem;
+  }
+}
 .home-wrapper .projects .main_title h2 span {
   font-size: 7rem;
+}
+@media (max-width: 575.98px) {
+  .home-wrapper .projects .main_title h2 span {
+    font-size: 2rem;
+  }
 }
 .home-wrapper .projects .splide__slide {
   display: flex;
@@ -568,7 +605,8 @@
 }
 @media (max-width: 575.98px) {
   .home-wrapper .packeges .main_title h2 {
-    font-size: 10vw;
+    font-size: 4rem;
+    margin-bottom: 2rem;
   }
 }
 .home-wrapper .packeges .packages-services {
@@ -750,7 +788,7 @@
   width: 100%;
   text-transform: uppercase;
   border: none;
-  font-size: 1.25vw;
+  font-size: 1.25rem;
   font-weight: 800;
 }
 .home-wrapper .contactus {
@@ -796,7 +834,7 @@
   }
 }
 .home-wrapper .contactus__image {
-  flex: 0.8;
+  flex: 1;
 }
 .home-wrapper .contactus__image img {
   border-radius: 14px;
@@ -825,5 +863,5 @@
   border-radius: 8px;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 1.25vw;
+  font-size: 1rem;
 }/*# sourceMappingURL=home.css.map */
