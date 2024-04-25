@@ -1,5 +1,6 @@
 @use './colors.scss';
-
+@use './_common.scss';
+@use './font.scss';
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,8 @@
 
 body,
 html {
-  font-family: 'GT America';
+  font-family: common.$font_compressed;
+  font-weight: 500;
   overflow-x: hidden;
 }
 
@@ -45,14 +47,14 @@ html {
     cursor: pointer;
     position: relative;
     z-index: 100000;
-    @media (max-width: 1199px) {
+    @media (max-width: 800px) {
       display: block;
     }
   }
   &__wrapper {
     transition: all 0.3s ease;
     display: flex;
-    @media (max-width: 1199px) {
+    @media (max-width: 800px) {
       left: 0;
       top: 0;
       opacity: 0;
@@ -74,7 +76,7 @@ html {
       align-items: center;
       justify-content: flex-end;
 
-      @media (max-width: 1199px) {
+      @media (max-width: 800px) {
         background-color: #ffffff26;
         flex-direction: column;
         justify-content: center;
@@ -84,14 +86,14 @@ html {
         background-color: colors.$white;
         width: 2px;
         height: 30px;
-        @media (max-width: 1199px) {
+        @media (max-width: 800px) {
           display: none;
         }
       }
       &__item {
         position: relative;
         padding-inline: 0.3rem;
-        @media (max-width: 1199px) {
+        @media (max-width: 800px) {
           padding: 0.8rem 2.5rem;
         }
         &::after {
@@ -129,7 +131,7 @@ html {
         border-radius: colors.$border_radius;
         cursor: pointer;
         &:hover {
-          background-color: colors.$white;
+          background-color: colors.$moov;
         }
       }
     }
@@ -530,6 +532,207 @@ footer {
         path {
           fill: colors.$white;
         }
+      }
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dimmer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  opacity: 0;
+}
+
+.modal__window {
+  width: 95%;
+  height: 90vh;
+  background: white;
+  border-radius: 10px;
+  opacity: 0;
+  padding: 1.5rem 2rem;
+  font-family: common.$font_compressed;
+  overflow-y: auto;
+  &__head {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    &__title {
+      font-weight: 600;
+      font-size: 28px;
+    }
+    p {
+      font-size: 20px;
+    }
+    .required {
+      color: colors.$red;
+    }
+  }
+  &__body {
+    overflow-y: auto;
+    h4 {
+      font-weight: 600;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-start;
+      .inp {
+        position: relative;
+        flex: 40%;
+        border-radius: 3px;
+        overflow: hidden;
+        min-width: 320px;
+        .label {
+          position: absolute;
+          top: 50%;
+          left: 12px;
+          font-size: 14px;
+          font-weight: 200;
+          transform-origin: 0 0;
+          transform: translate3d(0, -50%, 0);
+          transition: all 0.2s ease;
+          pointer-events: none;
+        }
+        .focus-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          transform: scaleX(0);
+          transform-origin: left;
+        }
+
+        input {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 100%;
+          border: 0;
+          font-family: inherit;
+          padding: 16px 12px 0 12px;
+          height: 45px;
+          border: 1px solid colors.$light_gray;
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 400;
+          background: rgba(colors.$main_purple, 0.02);
+          box-shadow: inset 0 -1px 0 rgba(colors.$main_purple, 0.3);
+          color: colors.$main_purple;
+          transition: all 0.15s ease;
+          &:hover {
+            background: rgba(colors.$main_purple, 0.04);
+          }
+          &:not(:placeholder-shown) {
+            + .label {
+              color: rgba(colors.$main_purple, 0.5);
+              transform: translate3d(0, -90%, 0) scale(0.75);
+            }
+          }
+          &:focus {
+            background: rgba(colors.$main_purple, 0.05);
+            outline: none;
+            box-shadow: inset 0 -2px 0 colors.$main_purple;
+            + .label {
+              color: colors.$main_purple;
+              transform: translate3d(0, -90%, 0) scale(0.75);
+            }
+            + .focus-bg {
+              transform: scaleX(1);
+              transition: all 0.1s ease;
+            }
+          }
+        }
+      }
+
+      .personal-info {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .personal-info,
+      .industry,
+      .payment-method {
+        border-bottom: 1px solid colors.$light_gray;
+        padding-bottom: 1.5rem;
+      }
+      .industry,
+      .payment-method {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        align-items: flex-start;
+      }
+      .weight-height {
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+      }
+      .form__title,
+      .form__subtitle {
+        color: colors.$text_gray;
+        font-family: common.$font_compressed;
+      }
+      .form__title {
+        font-size: 22px;
+        span {
+          color: colors.$red;
+        }
+      }
+      .form__subtitle {
+        font-size: 16px;
+        font-weight: 300;
+      }
+      .size_and_hair {
+        width: 100%;
+        display: flex;
+        gap: 3rem;
+        .size,
+        .hair-style {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          flex: 40%;
+          label {
+            display: flex;
+            gap: 0.5rem;
+          }
+        }
+      }
+      .submit-btn {
+        background-color: colors.$main_purple;
+        padding: 1rem 4rem;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        margin: auto;
+        min-width: 320px;
       }
     }
   }

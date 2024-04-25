@@ -2,13 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>OG Bees</title>
-
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-    /> -->
 
     <link rel="stylesheet" href="./assets/js/splide/css/splide.min.css" />
 
@@ -37,9 +32,11 @@
             </li>
             <li class="separator"></li>
             <li class="navbar__wrapper__list__item">
-              <a href="./packages.html"> OUR PACKAGES </a>
+              <a href="#packages"> OUR PACKAGES </a>
             </li>
-            <li class="navbar__wrapper__list__btn">book a meeting</li>
+            <li class="navbar__wrapper__list__btn" id="toggleBookAMeeting"
+              >book a meeting</li
+            >
             <li class="navbar__wrapper__list__btn">become a creator</li>
           </ul>
         </div>
@@ -452,9 +449,9 @@
           </div>
         </div>
       </section>
-      <section class="packeges">
+      <section id="packages" class="packeges">
         <div class="main_title">
-          <h2>Packeges & Services</h2>
+          <h2>PACKAGES & Services</h2>
         </div>
 
         <div class="packages-services">
@@ -827,16 +824,266 @@
       </footer>
     </div>
 
+    <div class="modal">
+      <div class="dimmer"></div>
+      <div class="modal__window">
+        <div class="modal__window__head">
+          <h4 class="modal__window__head__title">OGBees Creator Survey</h4>
+          <p>
+            Hey creators! We're excited to have you on board at OG Bees, a
+            subsidiary agency under Hive Analytics! 🐝 Take a quick survey to
+            help us match you with the perfect content creation opportunities.
+          </p>
+          <p class="required">* Indicates required question</p>
+        </div>
+        <div class="modal__window__body">
+          <form>
+            <div class="personal-info">
+              <label for="inp" class="inp">
+                <input type="text" id="inp" name="name" placeholder="&nbsp;" />
+                <span class="label">Name <span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  type="text"
+                  id="inp"
+                  name="phone-number"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Phone number <span>"</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input type="text" id="inp" name="age" placeholder="&nbsp;" />
+                <span class="label">Age<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  type="text"
+                  id="inp"
+                  name="address"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Address<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  type="text"
+                  id="inp"
+                  name="gender"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Gender<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input type="text" id="inp" name="link" placeholder="&nbsp;" />
+                <span class="label"
+                  >Leave a link to your previous videos<span>*</span></span
+                >
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input type="text" id="inp" name="email" placeholder="&nbsp;" />
+                <span class="label">Email<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input type="text" id="inp" name="photo" placeholder="&nbsp;" />
+                <span class="label"
+                  >Please share a photo of your background or filming
+                  location<span>*</span></span
+                >
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  type="text"
+                  id="inp"
+                  name="fb-link"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Facebook Link<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  type="text"
+                  id="inp"
+                  name="phone-type"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Phone Type<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+            </div>
+            <div class="payment-method">
+              <h4 class="form__title"
+                >Your preferred method for receiving payments<span>*</span></h4
+              >
+              <p class="form__subtitle">Select only one oval.</p>
+
+              <div class="form-group">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="payment-bank"
+                    id="payment-bank"
+                  />
+                  <label class="form-check-label" for="payment-bank">
+                    Bank account
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="payment-instapay"
+                    id="payment-instapay"
+                  />
+                  <label class="form-check-label" for="payment-instapay">
+                    Instapay / Vodafone Cash
+                  </label>
+                </div>
+              </div>
+
+              <label for="inp" class="inp">
+                <input
+                  type="text"
+                  id="inp"
+                  name="payment-method-details"
+                  placeholder="&nbsp;"
+                />
+                <span class="label"
+                  >Please Enter your account details<span>*</span></span
+                >
+                <span class="focus-bg"></span>
+              </label>
+            </div>
+            <div class="industry">
+              <h4 class="form__title">Industry<span>*</span></h4>
+              <p class="form__subtitle">Select only one oval.</p>
+              <input
+                type="radio"
+                name="industry"
+                placeholder="Fashion"
+                required
+              />
+              <input
+                type="radio"
+                name="industry"
+                placeholder="Electronics"
+                required
+              />
+              <input
+                type="radio"
+                name="industry"
+                placeholder="Cosmetics"
+                required
+              />
+              <input
+                type="radio"
+                name="industry"
+                placeholder="Home Supplies"
+                required
+              />
+              <input
+                type="radio"
+                name="industry"
+                placeholder="Gifting"
+                required
+              />
+              <input
+                type="radio"
+                name="industry"
+                placeholder="Other"
+                required
+              />
+            </div>
+            <div class="weight-height">
+              <label for="inp" class="inp">
+                <input
+                  type="text"
+                  id="inp"
+                  name="height"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Height<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  type="text"
+                  id="inp"
+                  name="weight"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Weight<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+            </div>
+            <div class="size_and_hair">
+              <div class="size">
+                <h4 class="form__title">Size<span>*</span></h4>
+                <p class="form__subtitle">Select only one oval.</p>
+                <label for="xs">
+                  <input type="radio" id="xs" name="industry" required />
+                  XS
+                </label>
+                <label for="s">
+                  <input type="radio" id="s" name="industry" required />
+                  S
+                </label>
+                <label for="m">
+                  <input type="radio" id="m" name="industry" required />
+                  M
+                </label>
+                <label for="large">
+                  <input type="radio" id="large" name="industry" required />
+                  L
+                </label>
+                <label for="x-large">
+                  <input type="radio" id="x-large" name="industry" required />
+                  XL
+                </label>
+              </div>
+              <div class="hair-style">
+                <h4 class="form__title">Hair Type<span>*</span></h4>
+                <p class="form__subtitle">Select only one oval.</p>
+
+                <label for="straight">
+                  <input type="radio" id="straight" name="industry" required />
+                  Straight
+                </label>
+                <label for="wavy">
+                  <input type="radio" id="wavy" name="industry" required />
+                  Wavy
+                </label>
+                <label for="curly">
+                  <input type="radio" id="curly" name="industry" required />
+                  Curly
+                </label>
+              </div>
+            </div>
+            <button id="submit" type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
-
     <script src="./assets/js/sliders-configs.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/how-it-works-animation.js"></script>
     <script src="./assets/js/hero-animation.js"></script>
+    <script src="./assets/js/toggleModals.js"></script>
   </body>
 </html>

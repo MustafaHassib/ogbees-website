@@ -6,12 +6,14 @@ $pink: #ff397e;
 $yellow: #e9ff00;
 $kanari: #ffcf01;
 $lemon: #00ff73;
+$red: #ff3b30;
 $light_green: #00dc71;
 $light_blue: #00bbf9;
 $light_lemon: #b4e6c2;
 $light_pink: #f7e2e2;
 $light_kanari: #f0e9ba;
 $light_gray: #d6ebf5;
+$text_gray: #5e6366;
 $lighter_gray: #e7eeec50;
 $light_cimon: #f3f8ff;
 $dark_green: #1d4943f8;
@@ -39,30 +41,4 @@ $border_radius: 12px;
 }
 .purple_bg {
   background-color: $moov;
-}
-
-@font-face {
-  font-family: 'GT America';
-  src: url('../fonts/GT-America-Compressed-Thin.woff');
-  font-weight: 200;
-}
-@font-face {
-  font-family: 'GT America';
-  src: url('../fonts/GT-America-Compressed-Light.woff');
-  font-weight: 300;
-}
-@font-face {
-  font-family: 'GT America';
-  src: url('../fonts/GT-America-Compressed-Medium.woff');
-  font-weight: 600;
-}
-@font-face {
-  font-family: 'GT America';
-  src: url('../fonts/GT-America-Compressed-Bold.woff');
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'GT America';
-  src: url('../fonts/GT-America-Compressed-Black.woff');
-  font-weight: 900;
 }
