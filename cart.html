@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OG Bees</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/cart.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="cart-screen">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./assets/images/logo-bg.png" alt="Logo" />
+        </div>
+        <a class="navbar__cta" href="./">Back to home</a>
+      </nav>
+
+      <div class="cart-screen__body">
+        <div class="cart-screen__body__info">
+          <div class="personal_info">
+            <h4 class="cart-screen__body__info__title"> Personal Info </h4>
+
+            <form action="">
+              <input type="text" name="name" placeholder="Name" />
+              <input type="email" name="email" placeholder="Email" />
+              <input
+                type="text"
+                name="phone-number"
+                placeholder="Phone number"
+              />
+            </form>
+          </div>
+          <div class="payment">
+            <h4 class="payment__title"> Payment </h4>
+            <p class="payment__subtitle">
+              All transactions are secure and encrypted.
+            </p>
+
+            <div class="payment__body">
+              <img src="./assets/images/cart/window.png" alt="" />
+              <p class="payment__body__desc">
+                After clicking “Proceed with payment”, you will be redirected to
+                Pay via (Debit/Credit cards/Wallets/Installments) to complete
+                your purchase securely.
+              </p>
+              <div class="poweredby">
+                <span>powered by</span>
+                <img src="./assets/images/cart/paymob.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-screen__body__package_summary">
+          <h4 class="cart-screen__body__package_summary__title">
+            Package Summary
+          </h4>
+
+          <div class="cart-screen__body__package_summary__body">
+            <h4 class="cart-screen__body__package_summary__body__title">
+              THE STARTER
+            </h4>
+            <div class="package_info">
+              <ul class="package_info__details">
+                <li class="package_info__details__detail">
+                  <span class="name">
+                    CREATION OF HIGH-QUALITY UGC VIDEOS
+                  </span>
+                  <span class="count"> 3-videos </span>
+                </li>
+
+                <li class="package_info__details__detail">
+                  <span class="name"> CONTENT CREATOR’S PORTFOLIOS </span>
+                  <span class="count"> ------- </span>
+                </li>
+
+                <li class="package_info__details__detail">
+                  <span class="name"> CONTENT CREATORS</span>
+                  <span class="count"> 2-creators</span>
+                </li>
+                <li class="package_info__details__detail">
+                  <span class="name"> ANIMATED GRAPHIC ADS (GIFS) </span>
+                  <span class="count"> 1-GIF </span>
+                </li>
+
+                <li class="package_info__details__detail">
+                  <span class="name"> STATIC GRAPHIC ADS </span>
+                  <span class="count"> 2-static </span>
+                </li>
+                <li class="package_info__details__detail">
+                  <span class="name"> SCRIPTS </span>
+                  <span class="count"> 3-SCRIPTS </span>
+                </li>
+              </ul>
+              <div class="discount">
+                <input
+                  type="text"
+                  name="discount"
+                  placeholder="Discount code"
+                />
+                <button>Apply</button>
+              </div>
+
+              <div class="subtotal">
+                <ul>
+                  <li><span>Subtotal </span> <span>25,000</span></li>
+                  <li class="downpayment"
+                    ><span>Down Payment </span> <span>-50%</span></li
+                  >
+                  <li><span>VAT </span> <span>14%</span></li>
+                </ul>
+              </div>
+              <div class="total">
+                <p>Total <span class="total__price"> EGP 10,750 </span></p>
+              </div>
+              <button class="proceed"> Proceed with payment </button>
+              <p class="disclaimer">
+                *By clicking 'Proceed with payment”, You agree to pay 50% now
+                and the remaining 50% upon videos completion and approval.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
