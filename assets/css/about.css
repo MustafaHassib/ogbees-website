@@ -86,7 +86,7 @@
   font-size: 100%;
 }
 .about-wrapper .page_title h2 {
-  font-size: 20rem;
+  font-size: calc(20rem + 10vw);
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -102,25 +102,26 @@
   }
 }
 .about-wrapper .intro {
-  padding: 5rem;
+  padding: calc(2.5rem + 1vw);
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 4rem;
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 @media (max-width: 575.98px) {
   .about-wrapper .intro {
     padding: 1rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 }
 .about-wrapper .intro__description {
   color: #64d87c;
   text-transform: uppercase;
-  font-size: 2rem;
-  max-width: 70%;
+  font-size: calc(1vw + 1rem);
+  max-width: 50vw;
 }
 @media (max-width: 575.98px) {
   .about-wrapper .intro__description {
@@ -143,9 +144,9 @@
 }
 .about-wrapper .intro__img {
   position: absolute;
-  top: -7rem;
-  right: 6rem;
-  width: 600px;
+  top: -5rem;
+  right: 5vw;
+  max-width: 40vw;
 }
 @media (max-width: 575.98px) {
   .about-wrapper .intro__img {
@@ -159,7 +160,7 @@
 .about-wrapper .video-section {
   display: flex;
   height: 50vh;
-  padding: 5rem;
+  padding: calc(2.5rem + 1vw);
 }
 @media (max-width: 575.98px) {
   .about-wrapper .video-section {
@@ -174,7 +175,7 @@
 .about-wrapper .video-section__text p {
   color: #64d87c;
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: calc(1vw + 1.5rem);
   font-weight: 800;
 }
 @media (max-width: 575.98px) {
@@ -248,7 +249,7 @@
   }
 }
 .about-wrapper .vision-and-mission {
-  padding: 5rem;
+  padding: calc(2.5rem + 1vw);
   display: flex;
   gap: 5rem;
   flex-direction: column;
@@ -318,7 +319,7 @@
   background-image: url("../images/about/dark-quote.png");
 }
 .about-wrapper .services {
-  padding: 5rem;
+  padding: calc(2.5rem + 1vw);
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -354,11 +355,12 @@
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 4rem;
-  padding-inline: 5rem;
+  padding-inline: calc(2.5rem + 1vw);
 }
 @media (max-width: 575.98px) {
   .about-wrapper .services .service-list {
-    padding-inline: 0;
+    padding-inline: 2rem;
+    margin-top: 1rem;
   }
 }
 .about-wrapper .services .service-list__item {
@@ -377,7 +379,7 @@
   width: 85%;
   margin: auto;
   border-radius: 24px;
-  padding: 3rem;
+  padding: calc(2.5rem + 1vw);
   text-align: center;
   display: flex;
   flex-direction: column;

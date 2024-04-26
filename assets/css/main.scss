@@ -360,9 +360,11 @@ html {
     border-radius: 20px;
     gap: 2rem;
     margin-top: 10vh;
+    font-size: 1.5rem;
     @media (max-width: 575.98px) {
       flex-direction: column;
       margin-top: 5vh;
+      font-size: 1rem;
     }
     .tabs {
       list-style: none;
@@ -478,6 +480,7 @@ footer {
     width: 100%;
   }
   .footer-bottom {
+    font-size: calc(0.5rem + 0.7vw);
     padding: 1.5rem 0;
     width: calc(100% - 5rem);
     margin: auto;

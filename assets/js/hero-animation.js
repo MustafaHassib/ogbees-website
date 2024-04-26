@@ -24,9 +24,19 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   mm.add('(min-width: 800px)', () => {
-    gsap.set('.video-1', { opacity: 0, scale: 0.6, yPercent: 100 });
-    gsap.set('.video-2', { opacity: 0, scale: 5, y: 0 });
-    gsap.set('.video-3', { opacity: 0, scale: 0.6, yPercent: 100 });
+    gsap.set('.video-1', {
+      width: '47vw',
+      opacity: 0,
+      scale: 0.6,
+      yPercent: 100,
+    });
+    gsap.set('.video-2', { width: '47vw', opacity: 0, scale: 5, yPercent: 0 });
+    gsap.set('.video-3', {
+      width: '40vw',
+      opacity: 0,
+      scale: 0.6,
+      yPercent: 100,
+    });
     gsap
       .timeline({
         // duration: 1,
@@ -59,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
         duration: 0.1,
         scrollTrigger: {
           trigger: '#statistics',
-          start: '-10%',
+          start: '-30%',
           toggleActions: 'play none play reverse',
         },
       })

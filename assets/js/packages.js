@@ -1,7 +1,24 @@
 let loading = true;
-gsap.set('.video-1', { opacity: 0, scale: 1, xPercent: 0, y: 150 });
-gsap.set('.video-2', { opacity: 0, scale: 1, xPercent: 0 });
-gsap.set('.video-3', { opacity: 0, scale: 1, xPercent: 0, y: 150 });
+gsap.set('.video-1', {
+  width: '25vw',
+  opacity: 0,
+  scale: 1,
+  xPercent: 0,
+  y: 150,
+});
+gsap.set('.video-2', {
+  width: '25vw',
+  opacity: 0,
+  scale: 1,
+  xPercent: 0,
+});
+gsap.set('.video-3', {
+  width: '25vw',
+  opacity: 0,
+  scale: 1,
+  xPercent: 0,
+  y: 150,
+});
 gsap.set('.packages-wrapper__bg', { opacity: 0, yPercent: -100 });
 gsap.set('.hero__body__title', { opacity: 0 });
 document.addEventListener('DOMContentLoaded', function () {
@@ -34,7 +51,7 @@ if (loading) {
     })
     .to(
       '.video-2',
-      { scale: 1.1, opacity: 1, yPercent: -10, xPercent: -115 },
+      { scale: 1.1, opacity: 1, yPercent: 0, xPercent: -115 },
       '>'
     )
     .to(

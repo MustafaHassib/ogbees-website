@@ -124,8 +124,9 @@
 .packages-wrapper .hero__videos .video-frame video {
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 60px;
-  box-shadow: 0 10px 40px black;
+  border-radius: calc(4vw + 10px);
+  box-shadow: 0 10px 30px black;
+  width: 25vw;
 }
 @media (max-width: 575.98px) {
   .packages-wrapper .hero__videos .video-frame video {
