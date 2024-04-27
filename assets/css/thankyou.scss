@@ -1,0 +1,74 @@
+@use './_common.scss';
+@use './colors.scss';
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid colors.$light_gray;
+  position: relative;
+  .logo {
+    img {
+      width: 100px;
+    }
+  }
+
+  &__cta {
+    color: colors.$moov;
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    @media (max-width: 575.98px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  flex-direction: column;
+  margin: auto;
+  max-width: 70%;
+  gap: 1rem;
+  font-family: 'Standard';
+  font-weight: 700;
+  @media (max-width: 575.98px) {
+    max-width: 100%;
+  }
+  .title {
+    color: colors.$light_green;
+    font-size: 2.5rem;
+    &.failed {
+      color: colors.$red;
+    }
+  }
+  .desc {
+    color: colors.$black;
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  .try-again {
+    background-color: colors.$moov;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 4px;
+    padding: 1rem 4rem;
+    width: 320px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+    border: 1px solid colors.$moov;
+
+    font-family: common.$font_extended;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

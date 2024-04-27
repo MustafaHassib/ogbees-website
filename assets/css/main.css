@@ -64,6 +64,36 @@
   src: url("../fonts/GT-America-Extended-Black.woff");
   font-weight: 900;
 }
+@font-face {
+  font-family: "Standard";
+  src: url("../fonts/GT-America-Standard-Thin-Trial.woff");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Standard";
+  src: url("../fonts/GT-America-Standard-Light-Trial.woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Standard";
+  src: url("../fonts/GT-America-Standard-Regular-Trial.woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Standard";
+  src: url("../fonts/GT-America-Standard-Medium-Trial.woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Standard";
+  src: url("../fonts/GT-America-Standard-Bold-Trial.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Standard";
+  src: url("../fonts/GT-America-Standard-Black-Trial.woff");
+  font-weight: 800;
+}
 * {
   margin: 0;
   padding: 0;
@@ -355,181 +385,181 @@ html {
   margin-bottom: 2rem;
 }
 .testimonials__list .testimonial__body:nth-child(1) {
-  background-color: #f0e9ba;
+  background-color: #b4e6c2;
 }
 .testimonials__list .testimonial__body:nth-child(2) {
   background-color: #d6ebf5;
 }
 .testimonials__list .testimonial__body:nth-child(3) {
-  background-color: #f7e2e2;
+  background-color: #f0e9ba;
 }
 .testimonials__list .testimonial__body:nth-child(4) {
-  background-color: #00bbf9;
+  background-color: #f3f8ff;
 }
 .testimonials__list .testimonial__body:nth-child(5) {
-  background-color: #b4e6c2;
-}
-.testimonials__list .testimonial__body:nth-child(6) {
-  background-color: #00bbf9;
-}
-.testimonials__list .testimonial__body:nth-child(7) {
-  background-color: #b4e6c2;
-}
-.testimonials__list .testimonial__body:nth-child(8) {
-  background-color: #d6ebf5;
-}
-.testimonials__list .testimonial__body:nth-child(9) {
   background-color: #f7e2e2;
 }
+.testimonials__list .testimonial__body:nth-child(6) {
+  background-color: #b4e6c2;
+}
+.testimonials__list .testimonial__body:nth-child(7) {
+  background-color: #f7e2e2;
+}
+.testimonials__list .testimonial__body:nth-child(8) {
+  background-color: #b4e6c2;
+}
+.testimonials__list .testimonial__body:nth-child(9) {
+  background-color: #f0e9ba;
+}
 .testimonials__list .testimonial__body:nth-child(10) {
-  background-color: #00bbf9;
+  background-color: #b4e6c2;
 }
 .testimonials__list .testimonial__body:nth-child(11) {
-  background-color: #f0e9ba;
+  background-color: #f3f8ff;
 }
 .testimonials__list .testimonial__body:nth-child(12) {
   background-color: #00bbf9;
 }
 .testimonials__list .testimonial__body:nth-child(13) {
-  background-color: #f3f8ff;
-}
-.testimonials__list .testimonial__body:nth-child(14) {
-  background-color: #00bbf9;
-}
-.testimonials__list .testimonial__body:nth-child(15) {
-  background-color: #d6ebf5;
-}
-.testimonials__list .testimonial__body:nth-child(16) {
   background-color: #f0e9ba;
 }
+.testimonials__list .testimonial__body:nth-child(14) {
+  background-color: #f7e2e2;
+}
+.testimonials__list .testimonial__body:nth-child(15) {
+  background-color: #00bbf9;
+}
+.testimonials__list .testimonial__body:nth-child(16) {
+  background-color: #d6ebf5;
+}
 .testimonials__list .testimonial__body:nth-child(17) {
-  background-color: #b4e6c2;
+  background-color: #00bbf9;
 }
 .testimonials__list .testimonial__body:nth-child(18) {
-  background-color: #d6ebf5;
+  background-color: #f0e9ba;
 }
 .testimonials__list .testimonial__body:nth-child(19) {
   background-color: #f7e2e2;
 }
 .testimonials__list .testimonial__body:nth-child(20) {
-  background-color: #b4e6c2;
+  background-color: #f0e9ba;
 }
 .testimonials__list .testimonial__body:nth-child(21) {
-  background-color: #f3f8ff;
-}
-.testimonials__list .testimonial__body:nth-child(22) {
-  background-color: #b4e6c2;
-}
-.testimonials__list .testimonial__body:nth-child(23) {
   background-color: #f7e2e2;
 }
-.testimonials__list .testimonial__body:nth-child(24) {
+.testimonials__list .testimonial__body:nth-child(22) {
   background-color: #d6ebf5;
 }
+.testimonials__list .testimonial__body:nth-child(23) {
+  background-color: #00bbf9;
+}
+.testimonials__list .testimonial__body:nth-child(24) {
+  background-color: #f7e2e2;
+}
 .testimonials__list .testimonial__body:nth-child(25) {
-  background-color: #f0e9ba;
+  background-color: #f3f8ff;
 }
 .testimonials__list .testimonial__body:nth-child(26) {
   background-color: #d6ebf5;
 }
 .testimonials__list .testimonial__body:nth-child(27) {
-  background-color: #b4e6c2;
+  background-color: #00bbf9;
 }
 .testimonials__list .testimonial__body:nth-child(28) {
   background-color: #d6ebf5;
 }
 .testimonials__list .testimonial__body:nth-child(29) {
-  background-color: #00bbf9;
-}
-.testimonials__list .testimonial__body:nth-child(30) {
-  background-color: #f7e2e2;
-}
-.testimonials__list .testimonial__body:nth-child(31) {
-  background-color: #b4e6c2;
-}
-.testimonials__list .testimonial__body:nth-child(32) {
-  background-color: #f7e2e2;
-}
-.testimonials__list .testimonial__body:nth-child(33) {
   background-color: #f0e9ba;
 }
-.testimonials__list .testimonial__body:nth-child(34) {
+.testimonials__list .testimonial__body:nth-child(30) {
+  background-color: #b4e6c2;
+}
+.testimonials__list .testimonial__body:nth-child(31) {
+  background-color: #f7e2e2;
+}
+.testimonials__list .testimonial__body:nth-child(32) {
   background-color: #d6ebf5;
+}
+.testimonials__list .testimonial__body:nth-child(33) {
+  background-color: #f3f8ff;
+}
+.testimonials__list .testimonial__body:nth-child(34) {
+  background-color: #f0e9ba;
 }
 .testimonials__list .testimonial__body:nth-child(35) {
   background-color: #f3f8ff;
 }
 .testimonials__list .testimonial__body:nth-child(36) {
-  background-color: #b4e6c2;
+  background-color: #f7e2e2;
 }
 .testimonials__list .testimonial__body:nth-child(37) {
-  background-color: #d6ebf5;
+  background-color: #f0e9ba;
 }
 .testimonials__list .testimonial__body:nth-child(38) {
-  background-color: #b4e6c2;
+  background-color: #f7e2e2;
 }
 .testimonials__list .testimonial__body:nth-child(39) {
-  background-color: #00bbf9;
+  background-color: #f3f8ff;
 }
 .testimonials__list .testimonial__body:nth-child(40) {
-  background-color: #d6ebf5;
+  background-color: #00bbf9;
 }
 .testimonials__list .testimonial__body:nth-child(41) {
-  background-color: #f3f8ff;
+  background-color: #f0e9ba;
 }
 .testimonials__list .testimonial__body:nth-child(42) {
   background-color: #f7e2e2;
 }
 .testimonials__list .testimonial__body:nth-child(43) {
-  background-color: #00bbf9;
+  background-color: #f0e9ba;
 }
 .testimonials__list .testimonial__body:nth-child(44) {
-  background-color: #f0e9ba;
+  background-color: #b4e6c2;
 }
 .testimonials__list .testimonial__body:nth-child(45) {
   background-color: #f3f8ff;
 }
 .testimonials__list .testimonial__body:nth-child(46) {
-  background-color: #f0e9ba;
-}
-.testimonials__list .testimonial__body:nth-child(47) {
-  background-color: #f7e2e2;
-}
-.testimonials__list .testimonial__body:nth-child(48) {
-  background-color: #d6ebf5;
-}
-.testimonials__list .testimonial__body:nth-child(49) {
-  background-color: #f7e2e2;
-}
-.testimonials__list .testimonial__body:nth-child(50) {
-  background-color: #b4e6c2;
-}
-.testimonials__list .testimonial__body:nth-child(51) {
-  background-color: #f3f8ff;
-}
-.testimonials__list .testimonial__body:nth-child(52) {
-  background-color: #d6ebf5;
-}
-.testimonials__list .testimonial__body:nth-child(53) {
-  background-color: #f3f8ff;
-}
-.testimonials__list .testimonial__body:nth-child(54) {
-  background-color: #f7e2e2;
-}
-.testimonials__list .testimonial__body:nth-child(55) {
-  background-color: #b4e6c2;
-}
-.testimonials__list .testimonial__body:nth-child(56) {
   background-color: #00bbf9;
 }
-.testimonials__list .testimonial__body:nth-child(57) {
-  background-color: #d6ebf5;
+.testimonials__list .testimonial__body:nth-child(47) {
+  background-color: #f0e9ba;
 }
-.testimonials__list .testimonial__body:nth-child(58) {
+.testimonials__list .testimonial__body:nth-child(48) {
   background-color: #f7e2e2;
 }
-.testimonials__list .testimonial__body:nth-child(59) {
+.testimonials__list .testimonial__body:nth-child(49) {
+  background-color: #f0e9ba;
+}
+.testimonials__list .testimonial__body:nth-child(50) {
+  background-color: #d6ebf5;
+}
+.testimonials__list .testimonial__body:nth-child(51) {
+  background-color: #f0e9ba;
+}
+.testimonials__list .testimonial__body:nth-child(52) {
+  background-color: #f7e2e2;
+}
+.testimonials__list .testimonial__body:nth-child(53) {
+  background-color: #f0e9ba;
+}
+.testimonials__list .testimonial__body:nth-child(54) {
   background-color: #b4e6c2;
+}
+.testimonials__list .testimonial__body:nth-child(55) {
+  background-color: #d6ebf5;
+}
+.testimonials__list .testimonial__body:nth-child(56) {
+  background-color: #f7e2e2;
+}
+.testimonials__list .testimonial__body:nth-child(57) {
+  background-color: #f0e9ba;
+}
+.testimonials__list .testimonial__body:nth-child(58) {
+  background-color: #00bbf9;
+}
+.testimonials__list .testimonial__body:nth-child(59) {
+  background-color: #f0e9ba;
 }
 .testimonials__list .testimonial__body:nth-child(60) {
   background-color: #d6ebf5;
@@ -538,100 +568,100 @@ html {
   background-color: #f3f8ff;
 }
 .testimonials__list .testimonial__body:nth-child(62) {
-  background-color: #d6ebf5;
+  background-color: #00bbf9;
 }
 .testimonials__list .testimonial__body:nth-child(63) {
-  background-color: #f7e2e2;
+  background-color: #b4e6c2;
 }
 .testimonials__list .testimonial__body:nth-child(64) {
-  background-color: #00bbf9;
+  background-color: #f3f8ff;
 }
 .testimonials__list .testimonial__body:nth-child(65) {
   background-color: #f0e9ba;
 }
 .testimonials__list .testimonial__body:nth-child(66) {
-  background-color: #d6ebf5;
+  background-color: #f3f8ff;
 }
 .testimonials__list .testimonial__body:nth-child(67) {
-  background-color: #f3f8ff;
+  background-color: #00bbf9;
 }
 .testimonials__list .testimonial__body:nth-child(68) {
-  background-color: #f0e9ba;
+  background-color: #d6ebf5;
 }
 .testimonials__list .testimonial__body:nth-child(69) {
-  background-color: #f7e2e2;
+  background-color: #00bbf9;
 }
 .testimonials__list .testimonial__body:nth-child(70) {
-  background-color: #d6ebf5;
+  background-color: #f0e9ba;
 }
 .testimonials__list .testimonial__body:nth-child(71) {
-  background-color: #b4e6c2;
+  background-color: #00bbf9;
 }
 .testimonials__list .testimonial__body:nth-child(72) {
-  background-color: #f3f8ff;
+  background-color: #f7e2e2;
 }
 .testimonials__list .testimonial__body:nth-child(73) {
-  background-color: #00bbf9;
+  background-color: #f3f8ff;
 }
 .testimonials__list .testimonial__body:nth-child(74) {
-  background-color: #f3f8ff;
-}
-.testimonials__list .testimonial__body:nth-child(75) {
-  background-color: #d6ebf5;
-}
-.testimonials__list .testimonial__body:nth-child(76) {
-  background-color: #b4e6c2;
-}
-.testimonials__list .testimonial__body:nth-child(77) {
-  background-color: #f7e2e2;
-}
-.testimonials__list .testimonial__body:nth-child(78) {
-  background-color: #f3f8ff;
-}
-.testimonials__list .testimonial__body:nth-child(79) {
   background-color: #00bbf9;
 }
-.testimonials__list .testimonial__body:nth-child(80) {
+.testimonials__list .testimonial__body:nth-child(75) {
   background-color: #f0e9ba;
+}
+.testimonials__list .testimonial__body:nth-child(76) {
+  background-color: #f7e2e2;
+}
+.testimonials__list .testimonial__body:nth-child(77) {
+  background-color: #d6ebf5;
+}
+.testimonials__list .testimonial__body:nth-child(78) {
+  background-color: #00bbf9;
+}
+.testimonials__list .testimonial__body:nth-child(79) {
+  background-color: #f0e9ba;
+}
+.testimonials__list .testimonial__body:nth-child(80) {
+  background-color: #00bbf9;
 }
 .testimonials__list .testimonial__body:nth-child(81) {
-  background-color: #f7e2e2;
+  background-color: #d6ebf5;
 }
 .testimonials__list .testimonial__body:nth-child(82) {
-  background-color: #b4e6c2;
-}
-.testimonials__list .testimonial__body:nth-child(83) {
-  background-color: #f0e9ba;
-}
-.testimonials__list .testimonial__body:nth-child(84) {
-  background-color: #b4e6c2;
-}
-.testimonials__list .testimonial__body:nth-child(85) {
-  background-color: #d6ebf5;
-}
-.testimonials__list .testimonial__body:nth-child(86) {
   background-color: #f7e2e2;
 }
-.testimonials__list .testimonial__body:nth-child(87) {
+.testimonials__list .testimonial__body:nth-child(83) {
+  background-color: #b4e6c2;
+}
+.testimonials__list .testimonial__body:nth-child(84) {
   background-color: #d6ebf5;
 }
-.testimonials__list .testimonial__body:nth-child(88) {
+.testimonials__list .testimonial__body:nth-child(85) {
   background-color: #f3f8ff;
+}
+.testimonials__list .testimonial__body:nth-child(86) {
+  background-color: #f0e9ba;
+}
+.testimonials__list .testimonial__body:nth-child(87) {
+  background-color: #f3f8ff;
+}
+.testimonials__list .testimonial__body:nth-child(88) {
+  background-color: #d6ebf5;
 }
 .testimonials__list .testimonial__body:nth-child(89) {
   background-color: #00bbf9;
 }
 .testimonials__list .testimonial__body:nth-child(90) {
-  background-color: #b4e6c2;
+  background-color: #f0e9ba;
 }
 .testimonials__list .testimonial__body:nth-child(91) {
-  background-color: #00bbf9;
+  background-color: #f7e2e2;
 }
 .testimonials__list .testimonial__body:nth-child(92) {
-  background-color: #b4e6c2;
+  background-color: #d6ebf5;
 }
 .testimonials__list .testimonial__body:nth-child(93) {
-  background-color: #d6ebf5;
+  background-color: #f0e9ba;
 }
 .testimonials__list .testimonial__body:nth-child(94) {
   background-color: #f3f8ff;
@@ -643,16 +673,16 @@ html {
   background-color: #00bbf9;
 }
 .testimonials__list .testimonial__body:nth-child(97) {
-  background-color: #f3f8ff;
-}
-.testimonials__list .testimonial__body:nth-child(98) {
   background-color: #f0e9ba;
 }
+.testimonials__list .testimonial__body:nth-child(98) {
+  background-color: #d6ebf5;
+}
 .testimonials__list .testimonial__body:nth-child(99) {
-  background-color: #f7e2e2;
+  background-color: #f3f8ff;
 }
 .testimonials__list .testimonial__body:nth-child(100) {
-  background-color: #b4e6c2;
+  background-color: #00bbf9;
 }
 .testimonials__list .testimonial__body__desc {
   font-style: italic;
