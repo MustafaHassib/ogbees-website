@@ -777,6 +777,7 @@
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  font-family: "Standard";
 }
 @media (max-width: 575.98px) {
   .home-wrapper .contactus {
@@ -789,10 +790,10 @@
 }
 .home-wrapper .contactus__form__title {
   color: #ff397e;
-  font-size: 7rem;
+  font-size: 4.5rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 @media (max-width: 575.98px) {
   .home-wrapper .contactus__form__title {
@@ -802,7 +803,7 @@
 }
 .home-wrapper .contactus__form__sub-title {
   color: #ff397e;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 @media (max-width: 575.98px) {
   .home-wrapper .contactus__form__sub-title {

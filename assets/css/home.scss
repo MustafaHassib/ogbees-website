@@ -1,3 +1,4 @@
+@use './_common.scss';
 @use './colors.scss';
 
 .home-wrapper {
@@ -723,6 +724,8 @@
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    font-family: common.$font_standard;
+
     @media (max-width: 575.98px) {
       padding: 1rem 2rem;
       flex-direction: column;
@@ -731,10 +734,10 @@
       flex: 1;
       &__title {
         color: colors.$pink;
-        font-size: 7rem;
+        font-size: 4.5rem;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         @media (max-width: 575.98px) {
           font-size: 2rem;
           text-align: center;
@@ -742,7 +745,7 @@
       }
       &__sub-title {
         color: colors.$pink;
-        font-size: 2rem;
+        font-size: 1rem;
         @media (max-width: 575.98px) {
           font-size: 0.8rem;
           text-align: center;
