@@ -1,19 +1,19 @@
 let loading = true;
 gsap.set('.video-1', {
-  width: '25vw',
+  width: '20vw',
   opacity: 0,
   scale: 1,
   xPercent: 0,
   y: 150,
 });
 gsap.set('.video-2', {
-  width: '25vw',
+  width: '20vw',
   opacity: 0,
   scale: 1,
   xPercent: 0,
 });
 gsap.set('.video-3', {
-  width: '25vw',
+  width: '20vw',
   opacity: 0,
   scale: 1,
   xPercent: 0,
@@ -51,17 +51,17 @@ if (loading) {
     })
     .to(
       '.video-2',
-      { scale: 1.1, opacity: 1, yPercent: 0, xPercent: -115 },
+      { scale: 1.1, opacity: 1, yPercent: 10, xPercent: -115 },
       '>'
     )
     .to(
       '.video-1',
-      { scale: 1.1, opacity: 1, yPercent: 5, xPercent: -100 },
+      { scale: 1.1, opacity: 1, yPercent: 15, xPercent: -100 },
       '<'
     )
     .to(
       '.video-3',
-      { scale: 1.1, opacity: 1, yPercent: -50, xPercent: -140 },
+      { scale: 1.1, opacity: 1, yPercent: -30, xPercent: -140 },
       '<'
     );
 }
