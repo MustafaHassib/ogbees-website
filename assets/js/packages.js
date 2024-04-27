@@ -21,6 +21,8 @@ gsap.set('.video-3', {
 });
 gsap.set('.packages-wrapper__bg', { opacity: 0, yPercent: -100 });
 gsap.set('.hero__body__title', { opacity: 0 });
+gsap.set('.hero__body__desc', { opacity: 0 });
+gsap.set('.hero__body__cta', { opacity: 0 });
 document.addEventListener('DOMContentLoaded', function () {
   loading = false;
 });
@@ -34,6 +36,16 @@ if (loading) {
       yPercent: 0,
     })
     .to('.hero__body__title', {
+      opacity: 1,
+      duration: 0.5,
+      xPercent: 0,
+    })
+    .to('.hero__body__desc', {
+      opacity: 1,
+      duration: 0.5,
+      xPercent: 0,
+    })
+    .to('.hero__body__cta', {
       opacity: 1,
       duration: 0.5,
       xPercent: 0,
