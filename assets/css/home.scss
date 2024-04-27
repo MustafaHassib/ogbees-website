@@ -2,7 +2,7 @@
 
 .home-wrapper {
   background-color: colors.$main_purple;
-
+  background-image: url('../images/home_bg.png');
   .hero {
     position: relative;
     &__bg {
@@ -147,7 +147,7 @@
         width: 100%;
       }
       &__title {
-        $title-font-size: 7rem;
+        $title-font-size: 9rem;
         text-transform: uppercase;
         font-weight: 800;
         font-size: $title-font-size;
@@ -158,7 +158,7 @@
           text-align: center;
         }
         span {
-          word-break: break-all;
+          white-space: nowrap;
           font-size: calc($title-font-size / 2);
           display: block;
           @media (max-width: 575.98px) {

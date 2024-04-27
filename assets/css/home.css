@@ -16,6 +16,7 @@
 
 .home-wrapper {
   background-color: #49108b;
+  background-image: url("../images/home_bg.png");
 }
 .home-wrapper .hero {
   position: relative;
@@ -180,7 +181,7 @@
 .home-wrapper #statistics .our-vision__title {
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 7rem;
+  font-size: 9rem;
   color: #ffffff;
   line-height: 1;
 }
@@ -191,8 +192,8 @@
   }
 }
 .home-wrapper #statistics .our-vision__title span {
-  word-break: break-all;
-  font-size: 3.5rem;
+  white-space: nowrap;
+  font-size: 4.5rem;
   display: block;
 }
 @media (max-width: 575.98px) {
