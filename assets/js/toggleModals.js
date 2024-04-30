@@ -19,5 +19,4 @@ const toggleModal = (e) => {
 };
 
 toggleBookAMeeting.addEventListener('click', toggleModal);
-close.addEventListener('click', toggleModal);
 dimmer.addEventListener('click', toggleModal);
