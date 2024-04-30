@@ -9,11 +9,42 @@
 
 body,
 html {
-  font-family: common.$font_compressed;
+  font-family: common.$font_standard;
   font-weight: 500;
   overflow-x: hidden;
 }
+.main_btn {
+  all: unset;
+  cursor: pointer;
+  color: colors.$pink;
+  background-color: colors.$white;
+  border-radius: 12px;
+  padding: 1rem 4rem;
+  border: 1px solid transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  @media (max-width: 575.98px) {
+    margin: auto;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
+  &:hover {
+    background-color: transparent;
+    border-color: white;
+  }
 
+  &.desktop-only {
+    @media (max-width: 575.98px) {
+      display: none;
+    }
+  }
+  &.mobile-only {
+    @media (min-width: 576px) {
+      display: none;
+    }
+  }
+}
 .main_title {
   text-align: center;
   width: 100%;
@@ -154,12 +185,18 @@ html {
   padding-top: 4rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   gap: 2rem;
   position: relative;
   overflow: hidden;
-  height: 320px;
+  height: 400px;
   @media (max-width: 575.98px) {
-    height: 250px;
+    height: 300px;
+  }
+  .main_btn {
+    margin: unset;
+    margin-top: 2rem;
   }
   &__top {
     padding: 2rem 0;
@@ -170,8 +207,8 @@ html {
     left: -10px;
     top: 120px;
     @media (max-width: 575.98px) {
-      top: 30px;
-      transform: skewY(7deg);
+      top: 70px;
+      transform: skewY(4deg);
     }
   }
 
@@ -180,12 +217,12 @@ html {
     padding: 2rem 0;
     background-color: colors.$moov;
     transform: skewY(-5deg);
-    bottom: 90px;
+    bottom: 150px;
     left: -10px;
     width: 110%;
     @media (max-width: 575.98px) {
-      bottom: 110px;
-      transform: skewY(-10deg);
+      bottom: 80px;
+      transform: skewY(-8deg);
     }
   }
   .splide__slide {

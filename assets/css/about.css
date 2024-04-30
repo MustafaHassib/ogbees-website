@@ -82,11 +82,13 @@
   background-image: url("../images/about/about-bg.png");
   background-repeat: repeat-y;
 }
-.about-wrapper .page_title {
-  font-size: 100%;
+@media (max-width: 575.98px) {
+  .about-wrapper .page_title {
+    padding-top: 2rem;
+  }
 }
 .about-wrapper .page_title h2 {
-  font-size: calc(20rem + 5vw);
+  font-size: 30vw;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -97,7 +99,7 @@
 }
 @media (max-width: 575.98px) {
   .about-wrapper .page_title h2 {
-    font-size: 7rem;
+    font-size: 20vw;
     letter-spacing: -4px;
   }
 }
@@ -292,7 +294,7 @@
 }
 @media (max-width: 575.98px) {
   .about-wrapper .vision-and-mission .desc {
-    font-size: 1.25rem;
+    font-size: 0.75rem;
   }
 }
 @media (max-width: 575.98px) {
