@@ -307,6 +307,7 @@
   }
 }
 .home-wrapper .why-trust__title {
+  font-family: "Extended";
   color: #ffffff;
   font-size: 4rem;
   font-weight: 700;
@@ -315,7 +316,12 @@
   flex: 1;
 }
 .home-wrapper .why-trust__title span {
-  color: #ff397e;
+  font-size: 5.5rem;
+}
+@media (max-width: 575.98px) {
+  .home-wrapper .why-trust__title span {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 575.98px) {
   .home-wrapper .why-trust__title {
@@ -326,6 +332,8 @@
   color: white;
   font-size: 2rem;
   flex: 0.5;
+  font-family: "Extended";
+  font-weight: 300;
 }
 @media (max-width: 575.98px) {
   .home-wrapper .why-trust__desc {
@@ -500,7 +508,7 @@
   margin-bottom: 5rem;
 }
 .home-wrapper .projects .main_title h2 {
-  font-size: 16rem;
+  font-size: 12rem;
   color: #7e30e1;
   font-weight: 900;
   line-height: 0.8;
@@ -513,7 +521,7 @@
   }
 }
 .home-wrapper .projects .main_title h2 span {
-  font-size: 7rem;
+  font-size: 5.5rem;
 }
 @media (max-width: 575.98px) {
   .home-wrapper .projects .main_title h2 span {
@@ -683,9 +691,10 @@
   border: 1px solid black;
   border-radius: 50%;
   padding: 10px;
+  transform: rotate(180deg);
 }
 .home-wrapper .packeges .packages-services .package .whats-included__head .toggle-collapse.rotate {
-  transform: rotate(180deg);
+  transform: rotate(0);
 }
 .home-wrapper .packeges .packages-services .package .whats-included__body {
   border-top: 1px solid black;

@@ -267,6 +267,7 @@
       text-align: center;
     }
     &__title {
+      font-family: common.$font_extended;
       color: colors.$white;
       font-size: 4rem;
       font-weight: 700;
@@ -274,7 +275,10 @@
       line-height: 1;
       flex: 1;
       span {
-        color: colors.$pink;
+        font-size: 5.5rem;
+        @media (max-width: 575.98px) {
+          font-size: 1.5rem;
+        }
       }
 
       @media (max-width: 575.98px) {
@@ -285,6 +289,8 @@
       color: white;
       font-size: 2rem;
       flex: 0.5;
+      font-family: common.$font_extended;
+      font-weight: 300;
       @media (max-width: 575.98px) {
         font-size: 1rem;
       }
@@ -452,7 +458,7 @@
       width: 100%;
       margin-bottom: 5rem;
       h2 {
-        font-size: 16rem;
+        font-size: 12rem;
         color: #7e30e1;
         font-weight: 900;
         line-height: 0.8;
@@ -462,7 +468,7 @@
           font-size: 3rem;
         }
         span {
-          font-size: 7rem;
+          font-size: 5.5rem;
           @media (max-width: 575.98px) {
             font-size: 2rem;
           }
@@ -622,8 +628,9 @@
               border: 1px solid black;
               border-radius: 50%;
               padding: 10px;
+              transform: rotate(180deg);
               &.rotate {
-                transform: rotate(180deg);
+                transform: rotate(0);
               }
             }
           }
