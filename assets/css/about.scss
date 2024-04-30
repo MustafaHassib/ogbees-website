@@ -66,11 +66,11 @@ $page_gutters: calc(2.5rem + 1vw);
   .page_title {
     font-size: 100%;
     h2 {
-      font-size: calc(20rem + 10vw);
+      font-size: calc(20rem + 5vw);
       font-weight: 900;
       text-transform: uppercase;
       text-align: center;
-      color: #64d87c;
+      color: #00ff73;
       letter-spacing: -17px;
       margin-inline-start: -1vw;
       white-space: nowrap;
@@ -94,7 +94,7 @@ $page_gutters: calc(2.5rem + 1vw);
       margin-top: 2rem;
     }
     &__description {
-      color: #64d87c;
+      color: #00ff73;
       text-transform: uppercase;
       font-size: calc(1vw + 1rem);
       max-width: 50vw;
@@ -141,7 +141,7 @@ $page_gutters: calc(2.5rem + 1vw);
       display: flex;
       align-items: center;
       p {
-        color: #64d87c;
+        color: #00ff73;
         text-transform: uppercase;
         font-size: calc(1vw + 1.5rem);
         font-weight: 800;
@@ -232,7 +232,7 @@ $page_gutters: calc(2.5rem + 1vw);
     }
     .title,
     .desc {
-      color: #edfd53;
+      color: #e9ff00;
       text-transform: uppercase;
     }
     .title {
@@ -258,7 +258,7 @@ $page_gutters: calc(2.5rem + 1vw);
     }
     .main_title {
       h2 {
-        color: #64d87c;
+        color: #00ff73;
         @media (max-width: 575.98px) {
           font-size: 2rem;
           margin-bottom: 1rem;
@@ -269,7 +269,7 @@ $page_gutters: calc(2.5rem + 1vw);
     &__list {
       .testimonial {
         &__body {
-          background-color: #edfd53;
+          background-color: #e9ff00;
           &__desc {
             &::before {
               background-image: url('../images/about/dark-quote.png');
@@ -295,7 +295,7 @@ $page_gutters: calc(2.5rem + 1vw);
     .service {
       &__title,
       &__desc {
-        color: #64d87c;
+        color: #00ff73;
         text-transform: uppercase;
         font-weight: 800;
       }
@@ -327,7 +327,7 @@ $page_gutters: calc(2.5rem + 1vw);
         font-size: 2.5vw;
         text-transform: uppercase;
         font-weight: 800;
-        color: #edfd53;
+        color: #e9ff00;
         @media (max-width: 575.98px) {
           font-size: 1.25rem;
         }
@@ -336,7 +336,7 @@ $page_gutters: calc(2.5rem + 1vw);
   }
 
   .get-started {
-    border: 2px solid #edfd53;
+    border: 2px solid #e9ff00;
     width: 85%;
     margin: auto;
     border-radius: 24px;
@@ -350,7 +350,7 @@ $page_gutters: calc(2.5rem + 1vw);
       padding: 1rem;
     }
     &__text {
-      color: #64d87c;
+      color: #00ff73;
       font-size: 2.5vw;
       text-transform: uppercase;
       font-weight: 800;
@@ -362,7 +362,7 @@ $page_gutters: calc(2.5rem + 1vw);
       cursor: pointer;
       border: 2px solid white;
       border-radius: 12px;
-      background-color: #edfd53;
+      background-color: #e9ff00;
       color: #004a43;
       font-size: 1.5vw;
       text-transform: uppercase;
@@ -374,7 +374,7 @@ $page_gutters: calc(2.5rem + 1vw);
       }
       &:hover {
         background-color: #004a43;
-        color: #edfd53;
+        color: #e9ff00;
       }
     }
   }
@@ -382,19 +382,19 @@ $page_gutters: calc(2.5rem + 1vw);
 
 footer {
   .footer-bottom {
-    border-top: 1px solid #edfd53;
+    border-top: 1px solid #e9ff00;
     .copyrights {
-      color: #edfd53;
+      color: #e9ff00;
     }
     .links {
       a {
-        color: #edfd53;
+        color: #e9ff00;
       }
     }
     .social-media {
       svg {
         path {
-          fill: #edfd53;
+          fill: #e9ff00;
         }
       }
     }

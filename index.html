@@ -18,6 +18,28 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="./assets/js/splide/js/splide.min.js"></script>
     <script src="./assets/js/splide/js/splide-auto-scroll.min.js"></script>
+    <!-- Calendly badge widget begin -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        Calendly.initBadgeWidget({
+          url: 'https://calendly.com/abdelrahmanwahdan/online',
+          text: 'Schedule time with me',
+          color: '#0069ff',
+          textColor: '#ffffff',
+          branding: undefined,
+        });
+      };
+    </script>
+    <!-- Calendly badge widget end -->
   </head>
   <body>
     <div class="home-wrapper">
