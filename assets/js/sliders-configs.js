@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const splide3 = new Splide('.latest-projects', {
     ...options,
     perPage: 4.5,
-    gap: '7rem',
+    gap: '9rem',
     snap: true,
     interval: 1000,
     autoScroll: {},

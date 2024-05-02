@@ -192,7 +192,7 @@ html {
   height: 250px;
   margin-bottom: 10rem;
   @media (max-width: 575.98px) {
-    height: 300px;
+    height: 200px;
   }
   .main_btn {
     margin: unset;
@@ -207,7 +207,6 @@ html {
     left: -10px;
     top: 40px;
     @media (max-width: 575.98px) {
-      top: 70px;
       transform: skewY(4deg);
     }
   }
@@ -221,7 +220,6 @@ html {
     left: -10px;
     width: 110%;
     @media (max-width: 575.98px) {
-      bottom: 80px;
       transform: skewY(-8deg);
     }
   }
