@@ -38,10 +38,15 @@
   font-weight: 700;
   @media (max-width: 575.98px) {
     max-width: 100%;
+    padding: 5rem 1rem 1rem;
   }
   .title {
     color: colors.$light_green;
     font-size: 2.5rem;
+    @media (max-width: 575.98px) {
+      font-size: 1.5rem;
+      text-align: center;
+    }
     &.failed {
       color: colors.$red;
     }
@@ -51,6 +56,9 @@
     font-size: 2rem;
     font-weight: 200;
     text-align: center;
+    @media (max-width: 575.98px) {
+      font-size: 1rem;
+    }
   }
 
   .try-again {
@@ -68,6 +76,7 @@
 
     font-family: common.$font_extended;
     &:hover {
+      color: colors.$moov;
       background-color: transparent;
     }
   }

@@ -182,7 +182,7 @@ html {
 }
 
 .brands-slides {
-  padding-top: 4rem;
+  // padding-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -269,7 +269,7 @@ html {
       font-weight: 800;
     }
     @media (max-width: 575.98px) {
-      margin-bottom: 0;
+      margin-bottom: 2rem;
     }
   }
 
@@ -288,44 +288,51 @@ html {
     }
     .testimonial {
       gap: 1rem;
+      border-radius: 24px;
+      &:first-child {
+        margin-inline-start: 1rem;
+      }
       @media (max-width: 575.98px) {
         display: flex;
-        min-width: 100%;
-      }
-      &:nth-child(2) {
-        margin-top: -2rem;
+        min-width: 85%;
       }
 
+      &:nth-child(2) {
+        margin-top: -2rem;
+        @media (max-width: 575.98px) {
+          margin-top: 0;
+        }
+      }
+      $previous-color: null;
+
+      @for $i from 1 through 100 {
+        &:nth-child(#{$i}) {
+          $random-index: random(length(colors.$color-palette));
+          $color: nth(colors.$color-palette, $random-index);
+
+          @if $color == $previous-color {
+            $random-index: $random-index + 1;
+            @if $random-index > length(colors.$color-palette) {
+              $random-index: 1;
+            }
+            $color: nth(colors.$color-palette, $random-index);
+          }
+
+          $previous-color: $color;
+
+          background-color: $color;
+        }
+      }
       &__body {
         padding: 3.5rem 2rem;
         gap: 4rem;
         flex-direction: column;
-        border-radius: 24px;
         transition: colors.$main_transition;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 2rem;
-        $previous-color: null;
 
-        @for $i from 1 through 100 {
-          &:nth-child(#{$i}) {
-            $random-index: random(length(colors.$color-palette));
-            $color: nth(colors.$color-palette, $random-index);
-
-            @if $color == $previous-color {
-              $random-index: $random-index + 1;
-              @if $random-index > length(colors.$color-palette) {
-                $random-index: 1;
-              }
-              $color: nth(colors.$color-palette, $random-index);
-            }
-
-            $previous-color: $color;
-
-            background-color: $color;
-          }
-        }
         &__desc {
           font-style: italic;
           line-height: 1.5;
@@ -380,6 +387,7 @@ html {
   width: 90vw;
   margin: 0 auto;
   .main_title {
+    margin-bottom: 0;
     h2 {
       font-family: common.$font_standard;
       font-size: 16vw;
@@ -398,11 +406,11 @@ html {
     padding: 2rem;
     border-radius: 20px;
     gap: 2rem;
-    margin-top: 10vh;
+    margin-top: 5vh;
     font-size: 1.5rem;
     @media (max-width: 575.98px) {
       flex-direction: column;
-      margin-top: 5vh;
+      margin-top: 2vh;
       font-size: 1rem;
       padding: 1rem;
       margin-bottom: 2rem;
@@ -540,23 +548,30 @@ footer {
     }
     .copyrights {
       color: colors.$white;
+      p {
+        font-size: 0.7rem;
+      }
       @media (max-width: 575.98px) {
         order: 2;
       }
     }
     .links {
       display: flex;
-      gap: 2rem;
+      gap: 1.5rem;
       align-items: center;
       margin-inline-end: auto;
-      padding: 0 2.5rem;
+      // padding: 0 2.5rem;
 
       @media (max-width: 575.98px) {
         order: 1;
         flex-wrap: wrap;
         gap: 1rem;
+        align-items: center;
+        justify-content: center;
       }
       a {
+        font-size: 0.9rem;
+        text-transform: capitalize;
         color: colors.$white;
         @media (max-width: 575.98px) {
           font-size: 0.8rem;
@@ -579,6 +594,8 @@ footer {
         justify-content: center;
       }
       svg {
+        width: 25px;
+        height: 25px;
         path {
           fill: colors.$white;
         }

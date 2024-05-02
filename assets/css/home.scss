@@ -251,6 +251,8 @@
     display: flex;
     gap: 0.5rem;
     @media (max-width: 575.98px) {
+      margin-bottom: 0;
+      padding-bottom: 0;
       width: auto;
       flex-direction: column;
       text-align: center;
@@ -456,14 +458,9 @@
         line-height: 0.8;
         display: flex;
         flex-direction: column;
-        @media (max-width: 575.98px) {
-          font-size: 3rem;
-        }
+
         span {
           font-size: calc($title / 2);
-          @media (max-width: 575.98px) {
-            font-size: 2rem;
-          }
         }
       }
     }
@@ -510,6 +507,7 @@
     padding: 5rem 2.5rem;
     @media (max-width: 575.98px) {
       width: 100%;
+      padding-inline: 1rem;
     }
     .main_title {
       margin-bottom: 5rem;
@@ -601,6 +599,9 @@
               span {
                 font-size: 1.5vw;
                 font-weight: 700;
+                @media (max-width: 575.98px) {
+                  font-size: 4.5vw;
+                }
               }
             }
           }
@@ -756,6 +757,9 @@
     }
     &__image {
       flex: 1;
+      @media (max-width: 575.98px) {
+        display: none;
+      }
       img {
         border-radius: 14px;
         width: 100%;
