@@ -148,9 +148,9 @@
 }
 .about-wrapper .intro__img {
   position: absolute;
-  top: -5rem;
+  top: 0;
   right: 5vw;
-  max-width: 40vw;
+  max-width: 50vw;
 }
 @media (max-width: 575.98px) {
   .about-wrapper .intro__img {

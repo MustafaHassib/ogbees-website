@@ -22,7 +22,7 @@ gsap
     duration: 0.1,
     scrollTrigger: {
       trigger: '.step-1',
-      start: 'top',
+      start: '-50%',
       end: 'bottom center',
       toggleActions: 'play none none reverse',
     },
@@ -43,14 +43,19 @@ gsap
   )
   .from('.desc-1', { xPercent: 130 }, '<')
   .to('.title-1', { xPercent: 0, y: 0 }, '<')
-  .from('#step-video', { x: 500, autoAlpha: 0 }, '<');
+  .fromTo(
+    '#step-video',
+    { xPercent: 500, autoAlpha: 0 },
+    { xPercent: 10, autoAlpha: 1 },
+    '<'
+  );
 
 gsap
   .timeline({
     duration: 0.1,
     scrollTrigger: {
       trigger: '.step-2',
-      start: 'top',
+      start: '-50%',
       end: 'bottom center',
       toggleActions: 'play none play reverse',
     },
@@ -74,13 +79,13 @@ gsap
     '<'
   )
   .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '<')
-  .to('.title-2', { xPercent: 300, y: 0 }, '<');
+  .to('.title-2', { xPercent: 200, y: 0 }, '<');
 gsap
   .timeline({
     duration: 0.1,
     scrollTrigger: {
       trigger: '.step-3',
-      start: 'top',
+      start: '-50%',
       end: 'bottom center',
       toggleActions: 'play none play reverse',
     },
@@ -97,7 +102,7 @@ gsap
     },
     '>'
   )
-  .to(' #step-video', { xPercent: 0 }, '<')
+  .to(' #step-video', { xPercent: 10 }, '<')
   .to('.title-2', { x: 2000, y: -100 }, '<')
   .to(
     '.steps__bg',
@@ -113,7 +118,7 @@ gsap
     duration: 0.1,
     scrollTrigger: {
       trigger: '.step-4',
-      start: 'top',
+      start: '-50%',
       end: 'bottom center',
       toggleActions: 'play none play reverse',
     },
@@ -136,6 +141,6 @@ gsap
   .to(' #step-video', { xPercent: -75 }, '<')
   .to('.title-3', { x: -2000, y: -100 }, '<')
   .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '>')
-  .to('.title-4', { xPercent: 140, y: 0 }, '<');
+  .to('.title-4', { xPercent: 80, y: 0 }, '<');
 
 ScrollTrigger.clearScrollMemory('auto');
