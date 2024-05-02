@@ -66,7 +66,7 @@
 .navbar__wrapper__list__btn {
   font-weight: 600;
   color: #ff397e;
-  border: 1px solid #7e30e1;
+  border: 1px solid #ffffff;
   padding: 0.8rem 2.5rem;
   font-size: 19px;
   text-transform: uppercase;
@@ -75,6 +75,9 @@
 }
 .navbar__wrapper__list__btn:hover {
   background-color: #ffffff;
+}
+.navbar__wrapper__list__btn:hover a {
+  color: rgba(29, 73, 67, 0.9725490196);
 }
 
 .about-wrapper {
@@ -88,7 +91,7 @@
   }
 }
 .about-wrapper .page_title h2 {
-  font-size: 30vw;
+  font-size: 20vw;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -99,7 +102,6 @@
 }
 @media (max-width: 575.98px) {
   .about-wrapper .page_title h2 {
-    font-size: 20vw;
     letter-spacing: -4px;
   }
 }
@@ -311,7 +313,7 @@
     margin-bottom: 1rem;
   }
 }
-.about-wrapper .testimonials__list .testimonial__body {
+.about-wrapper .testimonials__list .testimonial {
   background-color: #e9ff00;
 }
 .about-wrapper .testimonials__list .testimonial__body__desc::before {
