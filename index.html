@@ -104,7 +104,7 @@
           <p class="hero__body__title">Drive Clicks & Slash</p>
           <p class="hero__body__subtitle">Costs for your business!</p>
           <p class="hero__body__desc"> Trigger the power of UGC Ads </p>
-          <button class="main_btn">
+          <button id="get-started-btn" class="main_btn">
             Get started
             <i class="fa-solid fa-chevron-right fa-lg"></i>
           </button>
@@ -120,7 +120,7 @@
             In a Fast-Paced landscape, your products should stay up-front,
             backed-up with authentic customer stories!
           </p>
-          <button class="main_btn desktop-only">
+          <button id="get-started-btn" class="main_btn desktop-only">
             GET STARTED
             <i class="fa-solid fa-chevron-right fa-lg"></i>
           </button>
@@ -192,7 +192,7 @@
             </div>
           </div>
         </div>
-        <button class="main_btn mobile-only">
+        <button id="get-started-btn" class="main_btn mobile-only">
           GET STARTED
           <i class="fa-solid fa-chevron-right fa-lg"></i>
         </button>
@@ -275,7 +275,7 @@
           </section>
         </div>
 
-        <button class="main_btn">
+        <button id="get-started-btn" class="main_btn">
           GET STARTED <i class="fa-solid fa-chevron-right fa-lg"></i>
         </button>
       </div>
@@ -435,7 +435,7 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section id="projects" class="projects">
         <div class="main_title">
           <h2>Have a look <span> at our latest creations</span></h2>
         </div>
@@ -566,7 +566,7 @@
               </div>
             </div>
             <div class="package__footer">
-              <button class="get-started">get started</button>
+              <a href="./cart.html" class="get-started">get started</a>
             </div>
           </div>
           <div class="package">
@@ -642,7 +642,7 @@
               </div>
             </div>
             <div class="package__footer">
-              <button class="get-started">get started</button>
+              <a href="./cart.html" class="get-started">get started</a>
             </div>
           </div>
           <div class="package">
@@ -718,7 +718,7 @@
               </div>
             </div>
             <div class="package__footer">
-              <button class="get-started">get started</button>
+              <a href="./cart.html" class="get-started">get started</a>
             </div>
           </div>
           <div class="package">
@@ -794,13 +794,13 @@
               </div>
             </div>
             <div class="package__footer">
-              <button class="get-started">get started</button>
+              <a href="./cart.html" class="get-started">get started</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="faq-section">
+      <section id="brands-faq" class="faq-section">
         <div class="main_title">
           <h2>FAQs</h2>
         </div>
@@ -812,7 +812,7 @@
         </div>
       </section>
 
-      <section class="contactus">
+      <section id="contactus" class="contactus">
         <div class="contactus__form">
           <h2 class="contactus__form__title"> contact us </h2>
           <p class="contactus__form__sub-title">
@@ -844,12 +844,12 @@
           </div>
           <div class="links">
             <a href="./">Home</a>
-            <a href="./">about</a>
-            <a href="./">contact us</a>
-            <a href="./">Our work</a>
-            <a href="./">Pricing</a>
-            <a href="./">Brands FAQs</a>
-            <a href="./">Creators FAQs</a>
+            <a href="./about.html">about</a>
+            <a href="/#contactus">contact us</a>
+            <a href="/#projects">Our work</a>
+            <a href="/#packages">Pricing</a>
+            <a href="/#brands-faq">Brands FAQs</a>
+            <a href="./creators.html#creators-faq">Creators FAQs</a>
           </div>
           <div class="social-media">
             <a href="http://">
@@ -1012,7 +1012,7 @@
                     required
                     class="form-check-input"
                     type="radio"
-                    name="payment-bank"
+                    name="preferred-payment"
                     id="payment-bank"
                   />
                   <label class="form-check-label" for="payment-bank">
@@ -1024,7 +1024,7 @@
                     required
                     class="form-check-input"
                     type="radio"
-                    name="payment-instapay"
+                    name="preferred-payment"
                     id="payment-instapay"
                   />
                   <label class="form-check-label" for="payment-instapay">
@@ -1165,6 +1165,7 @@
 
     <script src="./assets/js/sliders-configs.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/home.js"></script>
     <script src="./assets/js/how-it-works-animation.js"></script>
     <script src="./assets/js/hero-animation.js"></script>
     <script src="./assets/js/toggleModals.js"></script>

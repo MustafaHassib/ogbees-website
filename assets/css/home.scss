@@ -333,14 +333,15 @@
 
       .main_title {
         h2 {
-          font-size: 9vw;
+          font-size: 4rem;
         }
       }
       &__title {
         position: absolute;
-        $title-font-size: 8vw;
+        $title-font-size: 4rem;
         padding: 1rem;
         padding-inline-start: 0;
+        margin-top: 2rem;
         @media (max-width: 575.98px) {
           text-align: center;
         }
@@ -537,7 +538,7 @@
         background-repeat: no-repeat;
         padding: 1.5rem;
         @media (max-width: 575.98px) {
-          min-width: 100%;
+          min-width: 90%;
           flex: 1;
         }
         &__head {
@@ -703,15 +704,18 @@
           padding-inline: 0.5rem;
           border-top: 1px solid black;
           .get-started {
+            text-align: center;
             background-color: colors.$light_green;
             color: colors.$white;
             border-radius: 36px;
+            display: inline-block;
             padding: 1rem;
             width: 100%;
             text-transform: uppercase;
             border: none;
             font-size: 1.25rem;
             font-weight: 800;
+            text-decoration: none;
           }
         }
       }

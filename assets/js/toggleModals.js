@@ -1,4 +1,4 @@
-const toggleBookAMeeting = document.getElementById('toggleBookAMeeting');
+const toggleBookAMeeting = document.querySelectorAll('#get-started-btn');
 const close = document.getElementById('close');
 const modal = document.querySelector('.modal');
 const dimmer = document.querySelector('.dimmer');
@@ -18,5 +18,7 @@ const toggleModal = (e) => {
   modalTl.reversed(!modalTl.reversed());
 };
 
-toggleBookAMeeting.addEventListener('click', toggleModal);
-dimmer.addEventListener('click', toggleModal);
+toggleBookAMeeting.forEach((btn) => {
+  btn.addEventListener('click', toggleModal);
+  dimmer.addEventListener('click', toggleModal);
+});

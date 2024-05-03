@@ -27,7 +27,7 @@ $page_gutters: calc(2.5rem + 1vw);
   &__wrapper {
     transition: all 0.3s ease;
     display: flex;
-    @media (max-width: 1199px) {
+    @media (min-width: 801px) and (max-width: 1199px) {
       left: 0;
       top: 0;
       opacity: 0;
@@ -40,7 +40,6 @@ $page_gutters: calc(2.5rem + 1vw);
       background-image: url('../images/logo-bg.png');
       background-repeat: repeat-y;
       background-size: contain;
-      background-blend-mode: color;
     }
     &__list {
       &__btn {

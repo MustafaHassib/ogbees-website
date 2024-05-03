@@ -349,13 +349,14 @@
 }
 .home-wrapper .steps .step .main_title h2,
 .home-wrapper .steps .step-how .main_title h2 {
-  font-size: 9vw;
+  font-size: 4rem;
 }
 .home-wrapper .steps .step__title,
 .home-wrapper .steps .step-how__title {
   position: absolute;
   padding: 1rem;
   padding-inline-start: 0;
+  margin-top: 2rem;
 }
 @media (max-width: 575.98px) {
   .home-wrapper .steps .step__title,
@@ -372,7 +373,7 @@
 .home-wrapper .steps .step__title h2,
 .home-wrapper .steps .step-how__title h2 {
   color: #ffffff;
-  font-size: 4vw;
+  font-size: 2rem;
 }
 .home-wrapper .steps .step__title h2:nth-child(even),
 .home-wrapper .steps .step-how__title h2:nth-child(even) {
@@ -386,7 +387,7 @@
 }
 .home-wrapper .steps .step__title__large,
 .home-wrapper .steps .step-how__title__large {
-  font-size: 8vw;
+  font-size: 4rem;
   color: #ffffff;
   margin-inline-start: 4rem;
 }
@@ -567,7 +568,7 @@
 }
 @media (max-width: 575.98px) {
   .home-wrapper .packeges .packages-services .package {
-    min-width: 100%;
+    min-width: 90%;
     flex: 1;
   }
 }
@@ -733,15 +734,18 @@
   border-top: 1px solid black;
 }
 .home-wrapper .packeges .packages-services .package__footer .get-started {
+  text-align: center;
   background-color: #00dc71;
   color: #ffffff;
   border-radius: 36px;
+  display: inline-block;
   padding: 1rem;
   width: 100%;
   text-transform: uppercase;
   border: none;
   font-size: 1.25rem;
   font-weight: 800;
+  text-decoration: none;
 }
 .home-wrapper .contactus {
   background-color: #ffffff;

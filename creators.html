@@ -64,10 +64,10 @@
           <p class="hero__body__desc">
             Join our community of content creators, & start your UGC career now!
           </p>
-          <button class="hero__body__cta">
+          <a id="get-started-btn" class="hero__body__cta">
             Join us
             <i class="fa-solid fa-chevron-right fa-lg"></i>
-          </button>
+          </a>
         </div>
         <div class="hero__videos">
           <div class="video-frame video-1">
@@ -126,7 +126,7 @@
                 loop
               ></video>
 
-              <button class="video__cta">
+              <button id="get-started-btn" class="video__cta">
                 Join us
                 <i class="fa-solid fa-chevron-right fa-lg"></i>
               </button>
@@ -246,7 +246,7 @@
                 with top brands</p
               >
 
-              <button class="main_btn">
+              <button id="get-started-btn" class="main_btn">
                 Join us
                 <i class="fa-solid fa-chevron-right fa-lg"></i>
               </button>
@@ -357,7 +357,7 @@
         </div>
       </section>
 
-      <section class="faq-section">
+      <section id="creators-faq" class="faq-section">
         <div class="main_title">
           <h2>FAQs</h2>
         </div>
@@ -377,12 +377,12 @@
           </div>
           <div class="links">
             <a href="./">Home</a>
-            <a href="./">about</a>
-            <a href="./">contact us</a>
-            <a href="./">Our work</a>
-            <a href="./">Pricing</a>
-            <a href="./">Brands FAQs</a>
-            <a href="./">Creators FAQs</a>
+            <a href="./about.html">about</a>
+            <a href="/index.html#contactus">contact us</a>
+            <a href="/index.html#projects">Our work</a>
+            <a href="/index.html#packages">Pricing</a>
+            <a href="/index.html#brands-faq">Brands FAQs</a>
+            <a href="#creators-faq">Creators FAQs</a>
           </div>
           <div class="social-media">
             <a href="http://">
@@ -402,6 +402,295 @@
       </footer>
     </div>
 
+    <div class="modal">
+      <div class="dimmer"></div>
+      <div class="modal__window">
+        <div class="modal__window__head">
+          <h4 class="modal__window__head__title">OGBees Creator Survey</h4>
+          <p>
+            Hey creators! We're excited to have you on board at OG Bees, a
+            subsidiary agency under Hive Analytics! 🐝 Take a quick survey to
+            help us match you with the perfect content creation opportunities.
+          </p>
+          <p class="required">* Indicates required question</p>
+        </div>
+        <div class="modal__window__body">
+          <form>
+            <div class="personal-info">
+              <label for="inp" class="inp">
+                <input
+                  required
+                  type="text"
+                  id="inp"
+                  name="name"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Name <span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  required
+                  type="text"
+                  id="inp"
+                  name="phone-number"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Phone number <span>"</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  required
+                  type="text"
+                  id="inp"
+                  name="age"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Age<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  required
+                  type="text"
+                  id="inp"
+                  name="address"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Address<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  required
+                  type="text"
+                  id="inp"
+                  name="gender"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Gender<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  required
+                  type="text"
+                  id="inp"
+                  name="link"
+                  placeholder="&nbsp;"
+                />
+                <span class="label"
+                  >Leave a link to your previous videos<span>*</span></span
+                >
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  required
+                  type="text"
+                  id="inp"
+                  name="email"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Email<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  required
+                  type="text"
+                  id="inp"
+                  name="photo"
+                  placeholder="&nbsp;"
+                />
+                <span class="label"
+                  >Please share a photo of your background or filming
+                  location<span>*</span></span
+                >
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  required
+                  type="text"
+                  id="inp"
+                  name="fb-link"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Facebook Link<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  required
+                  type="text"
+                  id="inp"
+                  name="phone-type"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Phone Type<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+            </div>
+            <div class="payment-method">
+              <h4 class="form__title"
+                >Your preferred method for receiving payments<span>*</span></h4
+              >
+              <p class="form__subtitle">Select only one oval.</p>
+
+              <div class="form-group">
+                <div class="form-check">
+                  <input
+                    required
+                    class="form-check-input"
+                    type="radio"
+                    name="payment-bank"
+                    id="payment-bank"
+                  />
+                  <label class="form-check-label" for="payment-bank">
+                    Bank account
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    required
+                    class="form-check-input"
+                    type="radio"
+                    name="payment-instapay"
+                    id="payment-instapay"
+                  />
+                  <label class="form-check-label" for="payment-instapay">
+                    Instapay / Vodafone Cash
+                  </label>
+                </div>
+              </div>
+
+              <label for="inp" class="inp">
+                <input
+                  required
+                  type="text"
+                  id="inp"
+                  name="payment-method-details"
+                  placeholder="&nbsp;"
+                />
+                <span class="label"
+                  >Please Enter your account details<span>*</span></span
+                >
+                <span class="focus-bg"></span>
+              </label>
+            </div>
+            <div class="industry">
+              <h4 class="form__title">Industry<span>*</span></h4>
+              <p class="form__subtitle">Select only one oval.</p>
+              <input
+                type="radio"
+                name="industry"
+                placeholder="Fashion"
+                required
+              />
+              <input
+                type="radio"
+                name="industry"
+                placeholder="Electronics"
+                required
+              />
+              <input
+                type="radio"
+                name="industry"
+                placeholder="Cosmetics"
+                required
+              />
+              <input
+                type="radio"
+                name="industry"
+                placeholder="Home Supplies"
+                required
+              />
+              <input
+                type="radio"
+                name="industry"
+                placeholder="Gifting"
+                required
+              />
+              <input
+                type="radio"
+                name="industry"
+                placeholder="Other"
+                required
+              />
+            </div>
+            <div class="weight-height">
+              <label for="inp" class="inp">
+                <input
+                  type="text"
+                  id="inp"
+                  name="height"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Height<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input
+                  type="text"
+                  id="inp"
+                  name="weight"
+                  placeholder="&nbsp;"
+                />
+                <span class="label">Weight<span>*</span></span>
+                <span class="focus-bg"></span>
+              </label>
+            </div>
+            <div class="size_and_hair">
+              <div class="size">
+                <h4 class="form__title">Size<span>*</span></h4>
+                <p class="form__subtitle">Select only one oval.</p>
+                <label for="xs">
+                  <input type="radio" id="xs" name="industry" required />
+                  XS
+                </label>
+                <label for="s">
+                  <input type="radio" id="s" name="industry" required />
+                  S
+                </label>
+                <label for="m">
+                  <input type="radio" id="m" name="industry" required />
+                  M
+                </label>
+                <label for="large">
+                  <input type="radio" id="large" name="industry" required />
+                  L
+                </label>
+                <label for="x-large">
+                  <input type="radio" id="x-large" name="industry" required />
+                  XL
+                </label>
+              </div>
+              <div class="hair-style">
+                <h4 class="form__title">Hair Type<span>*</span></h4>
+                <p class="form__subtitle">Select only one oval.</p>
+
+                <label for="straight">
+                  <input type="radio" id="straight" name="industry" required />
+                  Straight
+                </label>
+                <label for="wavy">
+                  <input type="radio" id="wavy" name="industry" required />
+                  Wavy
+                </label>
+                <label for="curly">
+                  <input type="radio" id="curly" name="industry" required />
+                  Curly
+                </label>
+              </div>
+            </div>
+            <button id="submit" type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
@@ -411,6 +700,7 @@
 
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/packages.js"></script>
+    <script src="./assets/js/toggleModals.js"></script>
 
     <script>
       document.addEventListener('DOMContentLoaded', function () {

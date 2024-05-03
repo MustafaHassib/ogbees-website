@@ -66,9 +66,9 @@ html {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 1.5rem 2.5rem;
+  padding: 1rem 2.5rem;
   position: fixed;
-  z-index: 100000;
+  z-index: 1000;
   width: 100%;
   top: 0;
   left: 0;
@@ -97,9 +97,9 @@ html {
       background-color: colors.$main_purple;
       z-index: 1000;
       background-image: url('../images/logo-bg.png');
-      background-repeat: repeat-y;
+      background-repeat: space;
       background-size: contain;
-      background-blend-mode: color;
+      background-blend-mode: difference;
     }
     &__list {
       list-style: none;
@@ -146,7 +146,7 @@ html {
         }
         a {
           font-weight: 600;
-          font-size: 18px;
+          font-size: 0.9rem;
           color: colors.$white;
           text-decoration: none;
           text-transform: uppercase;
@@ -158,7 +158,7 @@ html {
         color: colors.$white;
         border: 1px solid colors.$white;
         padding: 0.8rem 2.5rem;
-        font-size: 19px;
+        font-size: 0.9rem;
         text-transform: uppercase;
         border-radius: colors.$border_radius;
         cursor: pointer;
@@ -642,6 +642,9 @@ footer {
   padding: 1.5rem 2rem;
   font-family: common.$font_standard;
   overflow-y: auto;
+  @media (max-width: 575.98px) {
+    padding-inline: 1rem;
+  }
   &__head {
     margin-bottom: 1rem;
     display: flex;
@@ -679,6 +682,9 @@ footer {
         border-radius: 3px;
         overflow: hidden;
         min-width: 320px;
+        @media (max-width: 575.98px) {
+          min-width: 100%;
+        }
         .label {
           position: absolute;
           top: 50%;
@@ -810,7 +816,9 @@ footer {
         min-width: 320px;
         cursor: pointer;
         border: 1px solid colors.$moov;
-
+        @media (max-width: 575.98px) {
+          min-width: 100%;
+        }
         &:hover {
           background-color: transparent;
           color: colors.$moov;
