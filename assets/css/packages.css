@@ -414,7 +414,7 @@
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 4vw;
+  font-size: 4rem;
   text-align: center;
 }
 @media (max-width: 575.98px) {
@@ -440,7 +440,8 @@
   justify-content: space-around;
   overflow: hidden;
   transform: skewY(-8.8deg);
-  margin-top: -16%;
+  margin-top: -250px;
+  min-height: 700px;
 }
 @media (max-width: 575.98px) {
   .packages-wrapper .who-it-work__steps__step {
@@ -570,14 +571,14 @@
 }
 .packages-wrapper .who-it-work__steps__step__body__subtitle {
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 3rem;
 }
 .packages-wrapper .who-it-work__steps__step__body__title {
   font-weight: 700;
-  font-size: 4vw;
+  font-size: 4rem;
 }
 .packages-wrapper .who-it-work__steps__step__body__desc {
-  font-size: 2vw;
+  font-size: 2rem;
 }
 .packages-wrapper .who-it-work__steps__step__img {
   position: relative;
