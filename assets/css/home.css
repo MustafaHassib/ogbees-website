@@ -438,7 +438,7 @@
 .home-wrapper .steps .step__body #step-video,
 .home-wrapper .steps .step-how__body #step-video {
   position: relative;
-  width: 55%;
+  width: 40vw;
 }
 .home-wrapper .steps .step__body__img video,
 .home-wrapper .steps .step-how__body__img video {
