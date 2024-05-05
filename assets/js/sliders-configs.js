@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     lazyLoad: 'sequential',
     breakpoints: {
       640: { perPage: 3.5 },
-      1200: { perPage: 3 },
+      1300: { perPage: 3 },
       1600: { perPage: 5, gap: '14rem' },
     },
   });
