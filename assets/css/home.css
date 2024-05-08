@@ -359,6 +359,12 @@
 .home-wrapper .steps .step-how .main_title h2 {
   font-size: 4rem;
 }
+@media (max-width: 575.98px) {
+  .home-wrapper .steps .step .main_title h2,
+  .home-wrapper .steps .step-how .main_title h2 {
+    font-size: 2rem;
+  }
+}
 .home-wrapper .steps .step__title,
 .home-wrapper .steps .step-how__title {
   position: absolute;
@@ -430,6 +436,13 @@
   display: flex;
   align-items: center;
 }
+@media (max-width: 575.98px) {
+  .home-wrapper .steps .step__body__desc,
+  .home-wrapper .steps .step-how__body__desc {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 .home-wrapper .steps .step__body__desc p,
 .home-wrapper .steps .step-how__body__desc p {
   color: #ffffff;
@@ -441,12 +454,21 @@
   .home-wrapper .steps .step__body__desc p,
   .home-wrapper .steps .step-how__body__desc p {
     font-size: 1rem;
+    width: 100%;
+    text-align: center;
   }
 }
 .home-wrapper .steps .step__body #step-video,
 .home-wrapper .steps .step-how__body #step-video {
   position: relative;
   width: 40vw;
+}
+@media (max-width: 575.98px) {
+  .home-wrapper .steps .step__body #step-video,
+  .home-wrapper .steps .step-how__body #step-video {
+    width: 100%;
+    margin: auto;
+  }
 }
 .home-wrapper .steps .step__body__img video,
 .home-wrapper .steps .step-how__body__img video {
