@@ -4,6 +4,7 @@
 .home-wrapper {
   background-color: colors.$main_purple;
   background-image: url('../images/home_bg.png');
+  background-repeat: repeat-y;
   .hero {
     position: relative;
     &__bg {
@@ -234,10 +235,10 @@
         &__img {
           img {
             border-radius: colors.$border_radius;
-            height: 200px;
             width: 100%;
             object-fit: cover;
             object-position: top;
+            aspect-ratio: 1;
           }
         }
       }
@@ -297,6 +298,13 @@
     margin-bottom: 25vw;
     pointer-events: none;
     // min-height: 500vh;
+    .steps__bg,
+    .title-1,
+    .title-2,
+    .title-3,
+    .title-4 {
+      will-change: transform, opacity;
+    }
     &__bg {
       position: absolute;
       bottom: 0;

@@ -189,7 +189,7 @@ html {
   gap: 2rem;
   position: relative;
   overflow: hidden;
-  height: 250px;
+  height: 300px;
   margin-bottom: 10rem;
   @media (max-width: 575.98px) {
     height: 200px;
@@ -205,7 +205,7 @@ html {
     width: 110%;
     transform: skewY(3deg);
     left: -10px;
-    top: 40px;
+    top: 30%;
     @media (max-width: 575.98px) {
       transform: skewY(4deg);
     }
@@ -216,7 +216,7 @@ html {
     padding: 2rem 0;
     background-color: colors.$moov;
     transform: skewY(-5deg);
-    top: 40px;
+    top: 30%;
     left: -10px;
     width: 110%;
     @media (max-width: 575.98px) {

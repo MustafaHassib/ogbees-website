@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
       640: { perPage: 3.5 },
       1300: { perPage: 3 },
       1600: { perPage: 5, gap: '14rem' },
+      2200: { perPage: 6.5, gap: '14rem' },
     },
   });
 

@@ -17,6 +17,7 @@
 .home-wrapper {
   background-color: #49108b;
   background-image: url("../images/home_bg.png");
+  background-repeat: repeat-y;
 }
 .home-wrapper .hero {
   position: relative;
@@ -247,12 +248,12 @@
 }
 .home-wrapper #statistics .stats .state__img img {
   border-radius: 12px;
-  height: 200px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  aspect-ratio: 1;
 }
 .home-wrapper .why-trust {
   width: 95%;
@@ -311,6 +312,13 @@
   overflow: hidden;
   margin-bottom: 25vw;
   pointer-events: none;
+}
+.home-wrapper .steps .steps__bg,
+.home-wrapper .steps .title-1,
+.home-wrapper .steps .title-2,
+.home-wrapper .steps .title-3,
+.home-wrapper .steps .title-4 {
+  will-change: transform, opacity;
 }
 .home-wrapper .steps__bg {
   position: absolute;
