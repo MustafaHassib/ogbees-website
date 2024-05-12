@@ -63,12 +63,12 @@ if (loading) {
     })
     .to(
       '.video-2',
-      { scale: 1.1, opacity: 1, yPercent: 10, xPercent: -115 },
+      { scale: 1.1, opacity: 1, yPercent: 15, xPercent: -115 },
       '>'
     )
     .to(
       '.video-1',
-      { scale: 1.1, opacity: 1, yPercent: 0, xPercent: -100 },
+      { scale: 1.1, opacity: 1, yPercent: 20, xPercent: -100 },
       '<'
     )
     .to(

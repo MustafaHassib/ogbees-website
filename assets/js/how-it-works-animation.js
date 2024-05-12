@@ -249,6 +249,8 @@ mm.add('(min-width: 800px)', () => {
       '.desc-1',
       {
         color: '#ff397e',
+        xPercent: 0,
+
         textContent:
           'Our content creator will be shooting, editing, and polishing scripts into ad creatives that are primed for launch!',
       },
