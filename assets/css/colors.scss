@@ -18,14 +18,8 @@ $text_gray: #5e6366;
 $lighter_gray: #e7eeec50;
 $light_cimon: #f3f8ff;
 $dark_green: #1d4943f8;
-$color-palette: (
-  $light_blue,
-  $light_kanari,
-  $light_pink,
-  $light_lemon,
-  $light_gray,
-  $light_cimon
-);
+$blue: #0239c1;
+$color-palette: ($blue, $light_blue, $kanari, $moov, $yellow, $lemon);
 
 // common variables
 $main_transition: all 0.3s ease;

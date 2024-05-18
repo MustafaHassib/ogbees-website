@@ -28,11 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
     autoScroll: {},
     lazyLoad: 'sequential',
     breakpoints: {
-      640: { perPage: 3.5 },
-      1300: { perPage: 3 },
+      640: { perPage: 2.5 },
+      1300: { perPage: 3.5 },
       1600: { perPage: 5, gap: '14rem' },
-      1900: { perPage: 5, gap: '14rem' },
-      2200: { perPage: 6.5, gap: '14rem' },
+      1900: { perPage: 6, gap: '7rem' },
+      2200: { perPage: 6.5, gap: '7rem' },
     },
   });
 

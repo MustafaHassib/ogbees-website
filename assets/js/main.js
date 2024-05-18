@@ -28,22 +28,11 @@ window.onbeforeunload = function () {
 
 gsap.registerPlugin(ScrollTrigger);
 
-// const lenis = new Lenis();
-
-// lenis.on('scroll', ScrollTrigger.update);
-
-// gsap.ticker.add((time) => {
-//   lenis.raf(time * 1000);
-// });
-
-// gsap.ticker.lagSmoothing(0);
-
 function toggleContent(clickedButton) {
   clickedButton.classList.toggle('rotate');
 
   const allButtons = document.querySelectorAll('.toggle-section');
   const allContents = document.querySelectorAll('.whats-included__body');
-  console.log(allButtons);
   allContents.forEach((content) => {
     if (clickedButton.dataset.target === `#${content.id}`) {
       content.style.display =

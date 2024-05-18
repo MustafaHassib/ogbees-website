@@ -29,7 +29,7 @@
 }
 
 .packages-wrapper {
-  font-family: common.$font_standard;
+  font-family: common.$font_extended;
   background-color: #00bbf9;
   position: relative;
   &__bg {
@@ -473,10 +473,10 @@
 
             p {
               color: white;
-              font-size: 3rem;
+              font-size: 2rem;
               font-weight: 800;
               text-transform: uppercase;
-              font-family: common.$font_standard;
+              font-family: common.$font_extended;
               max-width: 35%;
               line-height: 1;
               @media (max-width: 575.98px) {
@@ -585,7 +585,7 @@
     padding: 5rem;
     height: 100vh;
     display: flex;
-    font-family: common.$font_standard;
+    font-family: common.$font_extended;
     align-items: center;
     justify-content: center;
     position: relative;

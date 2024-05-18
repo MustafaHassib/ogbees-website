@@ -48,16 +48,16 @@ document.addEventListener('DOMContentLoaded', function () {
         duration: 1,
         scale: 1,
       })
-      .to('.video-2', { scale: 0.75, yPercent: 18 }, '>')
-      .to('.video-2', { scale: 0.9 }, '>')
+      .to('.video-2', { scale: 0.65, yPercent: 18 }, '>')
+      .to('.video-2', { scale: 0.8 }, '>')
       .to(
         '.video-1',
-        { opacity: 1, scale: 0.75, yPercent: 20, xPercent: 35 },
+        { opacity: 1, scale: 0.7, yPercent: 20, xPercent: 35 },
         '<'
       )
       .to(
         '.video-3',
-        { opacity: 1, scale: 0.8, yPercent: 20, xPercent: -35 },
+        { opacity: 1, scale: 0.7, yPercent: 20, xPercent: -35 },
         '<'
       );
 

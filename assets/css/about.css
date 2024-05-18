@@ -90,7 +90,7 @@
   }
 }
 .about-wrapper .page_title h2 {
-  font-size: 20vw;
+  font-size: calc(17vw + 1rem);
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -102,6 +102,7 @@
 @media (max-width: 575.98px) {
   .about-wrapper .page_title h2 {
     letter-spacing: -4px;
+    font-size: calc(13vw + 1rem);
   }
 }
 .about-wrapper .intro {

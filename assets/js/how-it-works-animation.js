@@ -1,32 +1,6 @@
 const steps = document.querySelector('.steps');
 let mm = gsap.matchMedia();
 
-// const locoScroll = new LocomotiveScroll({
-//   el: document.querySelector('.smooth-scroll'),
-//   smooth: true,
-// });
-// locoScroll.on('scroll', ScrollTrigger.update);
-// ScrollTrigger.scrollerProxy('.smooth-scroll', {
-//   scrollTop(value) {
-//     return arguments.length
-//       ? locoScroll.scrollTo(value, 0, 0)
-//       : locoScroll.scroll.instance.scroll.y;
-//   }, // we don't have to define a scrollLeft because we're only scrolling vertically.
-
-//   getBoundingClientRect() {
-//     return {
-//       top: 0,
-//       left: 0,
-//       width: window.innerWidth,
-//       height: window.innerHeight,
-//     };
-//   },
-// });
-
-// ScrollTrigger.addEventListener('refresh', () => locoScroll.update());
-
-// ScrollTrigger.refresh();
-
 ScrollTrigger.create({
   trigger: '.steps',
   start: 'top',
@@ -35,14 +9,14 @@ ScrollTrigger.create({
   pin: true,
   toggleActions: 'play none play reverse',
   pinSpacing: false,
-  scrub: 4,
-  preventOverlaps: true,
+  scrub: 1,
   ease: 'power3.ease',
 });
-gsap.set('.title-1', { xPercent: -2000, y: -100 }, '<');
-gsap.set('.title-2', { xPercent: 2000, y: -100 }, '<');
-gsap.set('.title-3', { xPercent: -2000, y: -100 }, '<');
-gsap.set('.title-4', { xPercent: 2000, y: -100 }, '<');
+gsap.set('.title-1', { xPercent: -200, yPercent: -200 }, '<');
+gsap.set('.title-2', { xPercent: 200, yPercent: -200 }, '<');
+gsap.set('.title-3', { xPercent: -200, yPercent: -200 }, '<');
+gsap.set('.title-4', { xPercent: 200, yPercent: -200 }, '<');
+gsap.set('.title-5', { xPercent: -200, yPercent: -200 }, '<');
 gsap.set('.steps__bg', { height: '40vh', yPercent: 150 }, '<');
 
 mm.add('(max-width: 799px)', () => {
@@ -51,9 +25,10 @@ mm.add('(max-width: 799px)', () => {
       duration: 0.1,
       scrollTrigger: {
         trigger: '.step-1',
-        start: '-50%',
+        start: '0%',
         end: 'bottom center',
         toggleActions: 'play none none reverse',
+        scrub: true,
       },
     })
     .to('.step-how .main_title', { color: '#ffcf01', opacity: 0 })
@@ -71,7 +46,7 @@ mm.add('(max-width: 799px)', () => {
       '<'
     )
     .from('.desc-1', { xPercent: 0 }, '<')
-    .to('.title-1', { xPercent: 0, y: 0 }, '<')
+    .to('.title-1', { xPercent: -50, left: '50%', yPercent: 0 }, '<')
     .fromTo(
       '#step-video',
       { xPercent: 500, autoAlpha: 0 },
@@ -84,9 +59,10 @@ mm.add('(max-width: 799px)', () => {
       duration: 0.1,
       scrollTrigger: {
         trigger: '.step-2',
-        start: '-50%',
+        start: '0%',
         end: 'bottom center',
         toggleActions: 'play none none reverse',
+        scrub: true,
       },
     })
 
@@ -100,22 +76,23 @@ mm.add('(max-width: 799px)', () => {
       '>'
     )
     .to(' #step-video', { xPercent: 0 }, '<')
-    .to('.title-1', { x: -2000, y: -100 }, '<')
+    .to('.title-1', { x: -2000, yPercent: -200 }, '<')
     .to(
       '.steps__bg',
       { backgroundColor: '#ff397e', xPercent: 100, duration: 0 },
       '<'
     )
     .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '<')
-    .to('.title-2', { right: '2rem', xPercent: 0, y: 0 }, '<');
+    .to('.title-2', { xPercent: -50, left: '50%', yPercent: 0 }, '<');
   gsap
     .timeline({
       duration: 0.1,
       scrollTrigger: {
         trigger: '.step-3',
-        start: '-50%',
+        start: '0%',
         end: 'bottom center',
         toggleActions: 'play none none reverse',
+        scrub: true,
       },
     })
     .to('.steps__bg', { height: 0, transformOrigin: 'bottom' }, '<')
@@ -130,7 +107,7 @@ mm.add('(max-width: 799px)', () => {
       '>'
     )
     .to(' #step-video', { xPercent: 0 }, '<')
-    .to('.title-2', { xPercent: 2000, y: -100 }, '<')
+    .to('.title-2', { xPercent: 200, yPercent: -200 }, '<')
     .to(
       '.steps__bg',
       { backgroundColor: '#F3F8FF', xPercent: 0, duration: 0.1 },
@@ -138,16 +115,49 @@ mm.add('(max-width: 799px)', () => {
     )
     .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '<')
     .to('.title-3 > *', { color: '#ff397e' }, '<')
-    .to('.title-3', { xPercent: 0, y: 0 }, '<');
+    .to('.title-3', { xPercent: -50, left: '50%', yPercent: 0 }, '<');
 
   gsap
     .timeline({
       duration: 0.1,
       scrollTrigger: {
         trigger: '.step-4',
-        start: '-50%',
+        start: '0%',
         end: 'bottom center',
         toggleActions: 'play none none reverse',
+        scrub: true,
+      },
+    })
+
+    .to('.steps__bg', { height: 0, transformOrigin: 'bottom' }, '<')
+    .to(
+      '.desc-1',
+      {
+        color: '#ffffff',
+        textContent:
+          'Answer questions and share insights about your brand & products. So, we can understand what makes you stand out & create a narrative that reflects your unique selling points!',
+      },
+      '>'
+    )
+    .to(' #step-video', { xPercent: 0 }, '<')
+    .to('.title-3', { xPercent: -200, yPercent: -200 }, '<')
+    .to(
+      '.steps__bg',
+      { backgroundColor: '#ff397e', xPercent: 100, duration: 0 },
+      '<'
+    )
+    .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '<')
+    .to('.title-4', { xPercent: -50, left: '50%', yPercent: 0 }, '<');
+
+  gsap
+    .timeline({
+      duration: 0.1,
+      scrollTrigger: {
+        trigger: '.step-5',
+        start: '0%',
+        end: 'bottom center',
+        toggleActions: 'play none none reverse',
+        scrub: true,
       },
     })
     .to('.desc-1', { color: '#ffffff' }, '<')
@@ -165,9 +175,9 @@ mm.add('(max-width: 799px)', () => {
       '<'
     )
     .to(' #step-video', { xPercent: 0 }, '<')
-    .to('.title-3', { x: -2000, y: -100 }, '<')
+    .to('.title-4', { xPercent: 200, yPercent: -200 }, '<')
     .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '>')
-    .to('.title-4', { xPercent: -50, left: '50%', y: 0 }, '<');
+    .to('.title-5', { xPercent: -50, left: '50%', yPercent: 0 }, '<');
 });
 mm.add('(min-width: 800px)', () => {
   gsap
@@ -175,9 +185,10 @@ mm.add('(min-width: 800px)', () => {
       duration: 0.1,
       scrollTrigger: {
         trigger: '.step-1',
-        start: '-50%',
+        start: '0%',
         end: 'bottom center',
         toggleActions: 'play none none reverse',
+        scrub: true,
       },
     })
     .to('.step-how .main_title', { color: '#ffcf01', opacity: 0 })
@@ -195,7 +206,7 @@ mm.add('(min-width: 800px)', () => {
       '<'
     )
     .from('.desc-1', { xPercent: 130 }, '<')
-    .to('.title-1', { xPercent: 0, y: 0 }, '<')
+    .to('.title-1', { xPercent: 0, yPercent: 0 }, '<')
     .fromTo(
       '#step-video',
       { xPercent: 500, autoAlpha: 0 },
@@ -208,9 +219,10 @@ mm.add('(min-width: 800px)', () => {
       duration: 0.1,
       scrollTrigger: {
         trigger: '.step-2',
-        start: '-50%',
+        start: '0%',
         end: 'bottom center',
         toggleActions: 'play none none reverse',
+        scrub: true,
       },
     })
 
@@ -225,22 +237,23 @@ mm.add('(min-width: 800px)', () => {
       '>'
     )
     .to(' #step-video', { xPercent: -70 }, '<')
-    .to('.title-1', { x: -2000, y: -100 }, '<')
+    .to('.title-1', { xPercent: -200, yPercent: -200 }, '<')
     .to(
       '.steps__bg',
       { backgroundColor: '#ff397e', xPercent: 100, duration: 0 },
       '<'
     )
     .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '<')
-    .to('.title-2', { right: '25%', xPercent: -25, y: 0 }, '<');
+    .to('.title-2', { right: '25%', xPercent: -25, yPercent: 0 }, '<');
   gsap
     .timeline({
       duration: 0.1,
       scrollTrigger: {
         trigger: '.step-3',
-        start: '-50%',
+        start: '0%',
         end: 'bottom center',
         toggleActions: 'play none none reverse',
+        scrub: true,
       },
     })
     .to('.steps__bg', { height: 0, transformOrigin: 'bottom' }, '<')
@@ -256,8 +269,8 @@ mm.add('(min-width: 800px)', () => {
       },
       '>'
     )
-    .to(' #step-video', { xPercent: 10 }, '<')
-    .to('.title-2', { xPercent: 2000, y: -100 }, '<')
+    .to(' #step-video', { xPercent: 20 }, '<')
+    .to('.title-2', { xPercent: 200, yPercent: -200 }, '<')
     .to(
       '.steps__bg',
       { backgroundColor: '#F3F8FF', xPercent: 0, duration: 0 },
@@ -265,19 +278,51 @@ mm.add('(min-width: 800px)', () => {
     )
     .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '<')
     .to('.title-3 > *', { color: '#ff397e' }, '<')
-    .to('.title-3', { xPercent: 0, y: 0 }, '<');
+    .to('.title-3', { xPercent: 0, yPercent: 0 }, '<');
 
   gsap
     .timeline({
       duration: 0.1,
       scrollTrigger: {
         trigger: '.step-4',
-        start: '-50%',
+        start: '0%',
         end: 'bottom center',
         toggleActions: 'play none none reverse',
+        scrub: true,
       },
     })
     .to('.desc-1', { color: '#ffffff' }, '>')
+
+    .to('.steps__bg', { height: 0, transformOrigin: 'bottom' }, '<')
+    .to(
+      '.desc-1',
+      {
+        xPercent: 155,
+        textContent:
+          'Answer questions and share insights about your brand & products. So, we can understand what makes you stand out & create a narrative that reflects your unique selling points!',
+      },
+      '>'
+    )
+    .to(' #step-video', { xPercent: -70 }, '<')
+    .to('.title-3', { xPercent: -200, yPercent: -200 }, '<')
+    .to(
+      '.steps__bg',
+      { backgroundColor: '#ff397e', xPercent: 100, duration: 0 },
+      '<'
+    )
+    .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '<')
+    .to('.title-4', { right: '0', xPercent: -25, yPercent: 0 }, '<');
+  gsap
+    .timeline({
+      duration: 0.1,
+      scrollTrigger: {
+        trigger: '.step-5',
+        start: '0%',
+        end: 'bottom center',
+        toggleActions: 'play none none reverse',
+        scrub: true,
+      },
+    })
     .to(
       '.steps__bg',
       { xPercent: 100, height: 0, backgroundColor: '#2F9BFF', duration: 0 },
@@ -286,16 +331,16 @@ mm.add('(min-width: 800px)', () => {
     .to(
       '.desc-1',
       {
-        xPercent: 155,
+        xPercent: 0,
         textContent:
           'Time to launch you Ad creatives, and for people to know the story!',
       },
       '<'
     )
-    .to(' #step-video', { xPercent: -75 }, '<')
-    .to('.title-3', { x: -2000, y: -100 }, '<')
+    .to(' #step-video', { xPercent: 20 }, '<')
+    .to('.title-4', { xPercent: 200, yPercent: -200 }, '<')
     .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '>')
-    .to('.title-4', { xPercent: -50, left: '50%', y: 0 }, '<');
+    .to('.title-5', { xPercent: -50, left: '50%', yPercent: 0 }, '<');
 });
 
 ScrollTrigger.clearScrollMemory('auto');

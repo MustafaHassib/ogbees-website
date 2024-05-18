@@ -39,7 +39,7 @@
 }
 
 .packages-wrapper {
-  font-family: "Standard";
+  font-family: "Extended";
   background-color: #00bbf9;
   position: relative;
 }
@@ -541,10 +541,10 @@
 }
 .packages-wrapper .who-it-work__steps__step:last-child .collaborate p {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
-  font-family: "Standard";
+  font-family: "Extended";
   max-width: 35%;
   line-height: 1;
 }
@@ -664,7 +664,7 @@
   padding: 5rem;
   height: 100vh;
   display: flex;
-  font-family: "Standard";
+  font-family: "Extended";
   align-items: center;
   justify-content: center;
   position: relative;

@@ -9,7 +9,7 @@
 
 body,
 html {
-  font-family: common.$font_standard;
+  font-family: common.$font_extended;
   font-weight: 500;
   overflow-x: hidden;
 }
@@ -51,7 +51,7 @@ html {
   margin: auto;
   h2 {
     color: colors.$white;
-    font-family: common.$font_standard;
+    font-family: common.$font_extended;
     font-weight: 800;
     text-transform: uppercase;
     font-size: 10vw;
@@ -155,18 +155,19 @@ html {
 
       &__btn {
         font-weight: 600;
-        color: colors.$white;
         border: 1px solid colors.$white;
         padding: 0.8rem 2.5rem;
         font-size: 0.9rem;
         text-transform: uppercase;
         border-radius: colors.$border_radius;
+        color: colors.$pink;
+        background-color: colors.$white;
         cursor: pointer;
         &:hover {
           background-color: colors.$moov;
         }
         a {
-          color: white;
+          color: colors.$pink;
           text-decoration: none;
         }
       }
@@ -199,7 +200,7 @@ html {
     margin-top: 2rem;
   }
   &__top {
-    padding: 2rem 0;
+    padding: 1rem 0;
     position: absolute;
     background-color: colors.$pink;
     width: 110%;
@@ -213,7 +214,7 @@ html {
 
   &__bottom {
     position: absolute;
-    padding: 2rem 0;
+    padding: 1rem 0;
     background-color: colors.$moov;
     transform: skewY(-5deg);
     top: 30%;
@@ -229,6 +230,8 @@ html {
     display: flex;
     img {
       width: 100px;
+      object-fit: scale-down;
+      aspect-ratio: 16 / 9;
       @media (max-width: 575.98px) {
         width: 70px;
       }
@@ -240,7 +243,7 @@ html {
       height: 25px;
       background-image: url('../images/star.png');
       background-size: cover;
-      right: 1.5rem;
+      right: 0;
       top: 50%;
       transform: translateY(-50%);
       @media (max-width: 575.98px) {
@@ -390,7 +393,7 @@ html {
   .main_title {
     margin-bottom: 0;
     h2 {
-      font-family: common.$font_standard;
+      font-family: common.$font_extended;
       font-size: 16vw;
       color: colors.$pink;
       font-weight: 900;
@@ -430,10 +433,11 @@ html {
         border: none;
         cursor: pointer;
         position: relative;
-        font-size: calc(0.5rem + 1vw);
+        font-size: calc(0.3rem + 1vw);
         @media (max-width: 575.98px) {
           padding-inline-end: 2.5rem;
           padding-inline-start: 1rem;
+          font-size: calc(0.5rem + 1vw);
         }
         &.active {
           color: colors.$white;
@@ -443,8 +447,8 @@ html {
             background-image: url('../images/faq-icon.png');
             background-size: cover;
             background-repeat: no-repeat;
-            width: 25px;
-            height: 25px;
+            width: 15px;
+            height: 15px;
             position: absolute;
             top: 50%;
             right: 1rem;
@@ -459,7 +463,7 @@ html {
     }
     .body {
       flex: 1;
-      display: flex;
+      // display: flex;
       .content {
         width: 100%;
       }
@@ -474,15 +478,15 @@ html {
   display: none;
   color: colors.$white;
   position: relative;
-  padding-top: 5rem;
-  font-family: common.$font_standard;
+  padding-top: 3rem;
+  font-family: common.$font_extended;
   &::before {
     content: '';
     background-image: url('../images/faq-icon.png');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     position: absolute;
     top: 2.5vh;
     left: 2rem;
@@ -501,7 +505,10 @@ html {
   }
   span {
     line-height: 2;
-    font-size: calc(0.5rem + 1vw);
+    font-size: calc(0.3rem + 1vw);
+    @media (max-width: 575.98px) {
+      font-size: calc(0.5rem + 1vw);
+    }
   }
   img {
     width: 50px;
@@ -572,7 +579,7 @@ footer {
         justify-content: center;
       }
       a {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
         text-transform: capitalize;
         color: colors.$white;
         @media (max-width: 575.98px) {
@@ -582,8 +589,11 @@ footer {
     }
     .social-media {
       display: flex;
-      gap: 3rem;
-
+      gap: 1.5rem;
+      a {
+        display: flex;
+        align-items: center;
+      }
       @media (max-width: 575.98px) {
         font-size: 0.8rem;
         order: 0;
@@ -596,8 +606,8 @@ footer {
         justify-content: center;
       }
       svg {
-        width: 25px;
-        height: 25px;
+        width: 15px;
+        height: 15px;
         path {
           fill: colors.$white;
         }
@@ -640,7 +650,7 @@ footer {
   border-radius: 10px;
   opacity: 0;
   padding: 1.5rem 2rem;
-  font-family: common.$font_standard;
+  font-family: common.$font_extended;
   overflow-y: auto;
   @media (max-width: 575.98px) {
     padding-inline: 1rem;
@@ -672,7 +682,7 @@ footer {
       flex-direction: column;
       gap: 1rem;
       align-items: flex-start;
-      font-family: common.$font_standard;
+      font-family: common.$font_extended;
       input {
         accent-color: colors.$main_purple;
       }
@@ -775,7 +785,7 @@ footer {
       .form__title,
       .form__subtitle {
         color: colors.$text_gray;
-        font-family: common.$font_standard;
+        font-family: common.$font_extended;
       }
       .form__title {
         font-size: 20px;
