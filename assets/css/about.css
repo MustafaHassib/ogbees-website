@@ -316,6 +316,9 @@
 .about-wrapper .testimonials__list .testimonial {
   background-color: #e9ff00;
 }
+.about-wrapper .testimonials__list .testimonial__body {
+  color: #151515;
+}
 .about-wrapper .testimonials__list .testimonial__body__desc::before {
   background-image: url("../images/about/dark-quote.png");
 }

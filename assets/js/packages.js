@@ -63,17 +63,17 @@ if (loading) {
     })
     .to(
       '.video-2',
-      { scale: 1.1, opacity: 1, yPercent: 15, xPercent: -115 },
+      { scale: 1.1, opacity: 1, yPercent: 15, xPercent: -105 },
       '>'
     )
     .to(
       '.video-1',
-      { scale: 1.1, opacity: 1, yPercent: 20, xPercent: -100 },
+      { scale: 1.1, opacity: 1, yPercent: 20, xPercent: -80 },
       '<'
     )
     .to(
       '.video-3',
-      { scale: 1.1, opacity: 1, yPercent: -40, xPercent: -140 },
+      { scale: 1.1, opacity: 1, yPercent: -30, xPercent: -160 },
       '<'
     );
 }

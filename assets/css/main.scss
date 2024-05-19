@@ -9,6 +9,8 @@
 
 body,
 html {
+  overscroll-behavior: none;
+
   font-family: common.$font_extended;
   font-weight: 500;
   overflow-x: hidden;
@@ -277,11 +279,11 @@ html {
   &__list {
     width: 70%;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: masonry;
-    grid-auto-rows: minmax(100px auto);
-    grid-gap: 20px;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: masonry;
+    // grid-auto-rows: minmax(100px auto);
+    // grid-gap: 20px;
     @media (max-width: 575.98px) {
       overflow-x: auto;
       display: flex;
@@ -298,28 +300,43 @@ html {
         min-width: 85%;
       }
 
-      &:nth-child(2) {
-        margin-top: -2rem;
-        @media (max-width: 575.98px) {
-          margin-top: 0;
-        }
-      }
-      $previous-color: null;
+      // &:nth-child(2) {
+      //   margin-top: -2rem;
+      //   @media (max-width: 575.98px) {
+      //     margin-top: 0;
+      //   }
+      // }
+      $used-colors: ();
+      $available-colors: colors.$color-palette;
 
       @for $i from 1 through 100 {
+        @if length($available-colors) == 0 {
+          // Reset the available colors if all have been used
+          $available-colors: $used-colors;
+          $used-colors: ();
+        }
+
         &:nth-child(#{$i}) {
-          $random-index: random(length(colors.$color-palette));
-          $color: nth(colors.$color-palette, $random-index);
+          $random-index: random(length($available-colors));
+          $color: nth($available-colors, $random-index);
 
-          @if $color == $previous-color {
-            $random-index: $random-index + 1;
-            @if $random-index > length(colors.$color-palette) {
-              $random-index: 1;
+          // Add the selected color to the used colors list
+          $used-colors: append($used-colors, $color);
+          // Create a new list excluding the selected color
+          $temp-colors: ();
+          @for $j from 1 through length($available-colors) {
+            @if $j != $random-index {
+              $temp-colors: append($temp-colors, nth($available-colors, $j));
             }
-            $color: nth(colors.$color-palette, $random-index);
           }
+          $available-colors: $temp-colors;
 
-          $previous-color: $color;
+          @if $color == #0239c1 {
+            color: white;
+          }
+          @if $color == #7e30e1 {
+            color: white;
+          }
 
           background-color: $color;
         }
@@ -332,7 +349,6 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 2rem;
 
         &__desc {
           font-style: italic;

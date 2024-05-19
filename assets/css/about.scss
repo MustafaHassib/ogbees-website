@@ -274,6 +274,7 @@ $page_gutters: calc(2.5rem + 1vw);
       .testimonial {
         background-color: #e9ff00;
         &__body {
+          color: #151515;
           &__desc {
             &::before {
               background-image: url('../images/about/dark-quote.png');

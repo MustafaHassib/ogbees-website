@@ -20,8 +20,6 @@ navbarItem.forEach((btn) => {
   });
 });
 
-// Init Gsap and Lenis
-
 window.onbeforeunload = function () {
   window.scrollTo({ top: 0 });
 };
@@ -31,7 +29,6 @@ gsap.registerPlugin(ScrollTrigger);
 function toggleContent(clickedButton) {
   clickedButton.classList.toggle('rotate');
 
-  const allButtons = document.querySelectorAll('.toggle-section');
   const allContents = document.querySelectorAll('.whats-included__body');
   allContents.forEach((content) => {
     if (clickedButton.dataset.target === `#${content.id}`) {
@@ -48,4 +45,16 @@ document.querySelectorAll('.toggle-collapse').forEach((button) => {
   button.addEventListener('click', function () {
     toggleContent(this);
   });
+});
+
+var macy = Macy({
+  container: '.testimonials__list',
+  trueOrder: false,
+  waitForImages: false,
+  margin: 24,
+  columns: 3,
+  gap: 24,
+  breakAt: {
+    520: 1,
+  },
 });

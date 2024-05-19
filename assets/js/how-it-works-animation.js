@@ -9,8 +9,8 @@ ScrollTrigger.create({
   pin: true,
   toggleActions: 'play none play reverse',
   pinSpacing: false,
-  scrub: 1,
-  ease: 'power3.ease',
+  scrub: 0.1,
+  // ease: 'power3.ease',
 });
 gsap.set('.title-1', { xPercent: -200, yPercent: -200 }, '<');
 gsap.set('.title-2', { xPercent: 200, yPercent: -200 }, '<');
