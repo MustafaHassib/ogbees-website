@@ -279,15 +279,23 @@ html {
   &__list {
     width: 70%;
     margin: auto;
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-template-rows: masonry;
-    // grid-auto-rows: minmax(100px auto);
-    // grid-gap: 20px;
+    gap: 1rem;
+    display: none;
     @media (max-width: 575.98px) {
       overflow-x: auto;
       display: flex;
       width: 100%;
+      padding-inline-end: 1rem;
+    }
+
+    @media (min-width: 5768px) {
+      display: none;
+    }
+    &.desktop_testimonials {
+      display: block;
+      @media (max-width: 575.98px) {
+        display: none;
+      }
     }
     .testimonial {
       gap: 1rem;
@@ -300,12 +308,6 @@ html {
         min-width: 85%;
       }
 
-      // &:nth-child(2) {
-      //   margin-top: -2rem;
-      //   @media (max-width: 575.98px) {
-      //     margin-top: 0;
-      //   }
-      // }
       $used-colors: ();
       $available-colors: colors.$color-palette;
 
@@ -355,6 +357,7 @@ html {
           line-height: 1.5;
           position: relative;
           z-index: 2;
+          font-size: 0.8rem;
           &::before {
             content: '';
             position: absolute;

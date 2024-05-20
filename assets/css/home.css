@@ -618,7 +618,7 @@
 }
 @media (max-width: 575.98px) {
   .home-wrapper .packeges .packages-services .package__head__title {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 .home-wrapper .packeges .packages-services .package__head__name, .home-wrapper .packeges .packages-services .package__head__provider {

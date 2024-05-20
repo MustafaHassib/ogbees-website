@@ -47,14 +47,16 @@ document.querySelectorAll('.toggle-collapse').forEach((button) => {
   });
 });
 
-var macy = Macy({
-  container: '.testimonials__list',
-  trueOrder: false,
-  waitForImages: false,
-  margin: 24,
-  columns: 3,
-  gap: 24,
-  breakAt: {
-    520: 1,
-  },
+document.addEventListener('DOMContentLoaded', function () {
+  const macy = Macy({
+    container: '.desktop_testimonials',
+    trueOrder: false,
+    waitForImages: false,
+    margin: { x: 24, y: 24 },
+    columns: 3,
+    breakAt: {
+      520: 1,
+    },
+  });
+  macy();
 });

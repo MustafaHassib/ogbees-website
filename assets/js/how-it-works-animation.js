@@ -325,7 +325,7 @@ mm.add('(min-width: 800px)', () => {
     })
     .to(
       '.steps__bg',
-      { xPercent: 100, height: 0, backgroundColor: '#2F9BFF', duration: 0 },
+      { xPercent: 0, height: 0, backgroundColor: '#2F9BFF', duration: 0 },
       '<'
     )
     .to(
