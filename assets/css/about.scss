@@ -91,7 +91,7 @@ $page_gutters: calc(2.5rem + 1vw);
     flex-direction: column;
     gap: 4rem;
     margin-top: 5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     @media (max-width: 575.98px) {
       padding: 1rem;
       margin-bottom: 2rem;
@@ -144,6 +144,7 @@ $page_gutters: calc(2.5rem + 1vw);
       width: 50%;
       display: flex;
       align-items: center;
+      flex: 1;
       p {
         color: #00ff73;
         text-transform: uppercase;
@@ -157,7 +158,7 @@ $page_gutters: calc(2.5rem + 1vw);
     &__videos {
       position: relative;
       display: flex;
-      flex: 1;
+      flex: 0.7;
       .video-frame {
         position: relative;
         max-width: 300px;
@@ -196,7 +197,7 @@ $page_gutters: calc(2.5rem + 1vw);
       }
       .video-1 {
         right: 0;
-        top: -10rem;
+        top: -20rem;
         z-index: 100;
         @media (max-width: 575.98px) {
           top: 1rem;
@@ -204,7 +205,7 @@ $page_gutters: calc(2.5rem + 1vw);
       }
       .video-2 {
         right: 150px;
-        top: 0;
+        top: -10rem;
         @media (max-width: 575.98px) {
           right: 40px;
           top: 5rem;
@@ -218,7 +219,7 @@ $page_gutters: calc(2.5rem + 1vw);
     display: flex;
     gap: 5rem;
     flex-direction: column;
-    margin-top: 15rem;
+    margin-top: 4rem;
     @media (max-width: 575.98px) {
       padding: 1rem;
       margin-top: 0;
@@ -257,9 +258,8 @@ $page_gutters: calc(2.5rem + 1vw);
     }
   }
   .testimonials {
-    @media (max-width: 575.98px) {
-      padding-top: 5rem;
-    }
+    padding-top: 2rem;
+
     .main_title {
       h2 {
         color: #00ff73;
@@ -295,7 +295,7 @@ $page_gutters: calc(2.5rem + 1vw);
     flex-direction: column;
     gap: 3rem;
     @media (max-width: 575.98px) {
-      padding: 1rem;
+      padding: 1rem 1rem 2rem;
     }
     .service {
       &__title,
@@ -308,13 +308,13 @@ $page_gutters: calc(2.5rem + 1vw);
       &__title {
         font-size: 5vw;
         @media (max-width: 575.98px) {
-          font-size: 2.5rem;
+          font-size: 1.5rem;
         }
       }
       &__desc {
         font-size: 1.5vw;
         @media (max-width: 575.98px) {
-          font-size: 1.25rem;
+          font-size: 1rem;
         }
       }
     }

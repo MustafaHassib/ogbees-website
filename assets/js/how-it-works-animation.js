@@ -25,7 +25,7 @@ mm.add('(max-width: 799px)', () => {
       duration: 0.1,
       scrollTrigger: {
         trigger: '.step-1',
-        start: '0%',
+        start: '-20%',
         end: 'bottom center',
         toggleActions: 'play none none reverse',
         scrub: true,
@@ -163,7 +163,7 @@ mm.add('(max-width: 799px)', () => {
     .to('.desc-1', { color: '#ffffff' }, '<')
     .to(
       '.steps__bg',
-      { xPercent: 100, height: 0, backgroundColor: '#2F9BFF', duration: 0 },
+      { xPercent: 0, height: 0, backgroundColor: '#2F9BFF', duration: 0 },
       '<'
     )
     .to(

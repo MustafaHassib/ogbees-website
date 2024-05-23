@@ -15,6 +15,9 @@ html {
   font-weight: 500;
   overflow-x: hidden;
 }
+video {
+  pointer-events: none;
+}
 .main_btn {
   all: unset;
   cursor: pointer;

@@ -193,6 +193,7 @@
       margin-bottom: 5rem;
       @media (max-width: 575.98px) {
         margin-bottom: 2rem;
+        font-size: calc(0.7rem + 1.5vw);
       }
     }
 
@@ -373,20 +374,20 @@
       color: colors.$white;
       text-transform: uppercase;
       font-weight: 800;
-      font-size: 4rem;
+      font-size: 2.5rem;
       text-align: center;
       @media (max-width: 575.98px) {
-        font-size: 1.5rem;
+        font-size: 0.7rem;
       }
     }
 
     &__steps {
-      margin: 20rem 0 5rem;
+      margin: 15rem 0 5rem;
       display: flex;
       flex-direction: column;
       gap: 5rem;
       @media (max-width: 575.98px) {
-        margin-top: 10rem;
+        margin-top: 7rem;
       }
       &__step {
         display: flex;
@@ -446,7 +447,10 @@
           }
           .who-it-work__steps__step__body,
           .who-it-work__steps__step__img {
-            transform: translateY(-4rem);
+            transform: translateY(-10rem);
+            @media (max-width: 575.98px) {
+              transform: translateY(-4rem);
+            }
           }
           .who-it-work__steps__step__img {
             position: relative;
