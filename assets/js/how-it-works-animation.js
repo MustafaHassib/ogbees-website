@@ -5,11 +5,11 @@ ScrollTrigger.create({
   trigger: '.steps',
   start: 'top',
   // endTrigger: ".testimonials",
-  end: `+=${steps.offsetHeight}px 50%`,
+  end: `+=${steps.offsetHeight} 50%`,
   pin: true,
   toggleActions: 'play none play reverse',
   pinSpacing: false,
-  scrub: 0.1,
+  scrub: true,
   // ease: 'power3.ease',
 });
 gsap.set('.title-1', { xPercent: -200, yPercent: -200 }, '<');
@@ -25,7 +25,7 @@ mm.add('(max-width: 799px)', () => {
       duration: 0.1,
       scrollTrigger: {
         trigger: '.step-1',
-        start: '-20%',
+        start: '0%',
         end: 'bottom center',
         toggleActions: 'play none none reverse',
         scrub: true,
@@ -311,7 +311,7 @@ mm.add('(min-width: 800px)', () => {
       '<'
     )
     .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '<')
-    .to('.title-4', { right: '0', xPercent: -25, yPercent: 0 }, '<');
+    .to('.title-4', { right: '-5%', xPercent: -25, yPercent: 0 }, '<');
   gsap
     .timeline({
       duration: 0.1,

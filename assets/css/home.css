@@ -21,6 +21,12 @@
 }
 .home-wrapper .hero {
   position: relative;
+  overflow: hidden;
+}
+@media (max-width: 575.98px) {
+  .home-wrapper .hero {
+    margin-bottom: 4rem;
+  }
 }
 .home-wrapper .hero__bg {
   position: absolute;
@@ -120,6 +126,7 @@
   margin-block: 1rem;
 }
 .home-wrapper #statistics {
+  overflow: hidden;
   display: flex;
   padding: 2rem 3rem;
   gap: 3rem;
@@ -165,7 +172,8 @@
   .home-wrapper #statistics .our-vision__title {
     display: flex;
     flex-direction: column;
-    gap: 2.1rem;
+    line-height: 1;
+    flex-wrap: wrap;
   }
 }
 .home-wrapper #statistics .our-vision__title span {

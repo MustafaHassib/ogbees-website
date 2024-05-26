@@ -139,6 +139,7 @@ $page_gutters: calc(2.5rem + 1vw);
     padding: $page_gutters;
     @media (max-width: 575.98px) {
       padding: 1rem;
+      gap: 2rem;
     }
     &__text {
       width: 50%;

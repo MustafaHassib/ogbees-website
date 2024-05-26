@@ -7,6 +7,11 @@
   background-repeat: repeat-y;
   .hero {
     position: relative;
+    overflow: hidden;
+
+    @media (max-width: 575.98px) {
+      margin-bottom: 4rem;
+    }
     &__bg {
       position: absolute;
       top: 0;
@@ -102,6 +107,8 @@
     }
   }
   #statistics {
+    overflow: hidden;
+
     display: flex;
     padding: 2rem 3rem;
     gap: 3rem;
@@ -140,7 +147,8 @@
         @media (min-width: 576px) {
           display: flex;
           flex-direction: column;
-          gap: 2.1rem;
+          line-height: 1;
+          flex-wrap: wrap;
         }
         span {
           font-size: 7vw;

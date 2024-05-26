@@ -169,6 +169,7 @@
 @media (max-width: 575.98px) {
   .about-wrapper .video-section {
     padding: 1rem;
+    gap: 2rem;
   }
 }
 .about-wrapper .video-section__text {

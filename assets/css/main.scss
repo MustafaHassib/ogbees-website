@@ -13,8 +13,8 @@ html {
 
   font-family: common.$font_extended;
   font-weight: 500;
-  overflow-x: hidden;
 }
+
 video {
   pointer-events: none;
 }
@@ -262,8 +262,9 @@ video {
 .testimonials {
   padding-top: 10rem;
   margin: auto;
+
   @media (max-width: 575.98px) {
-    padding-top: 20rem;
+    padding-top: 25rem;
     padding-inline: 0;
     height: auto;
   }
