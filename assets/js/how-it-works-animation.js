@@ -311,7 +311,7 @@ mm.add('(min-width: 800px)', () => {
       '<'
     )
     .to('.steps__bg', { height: '100vh', transformOrigin: 'bottom' }, '<')
-    .to('.title-4', { right: '-5%', xPercent: -25, yPercent: 0 }, '<');
+    .to('.title-4', { right: '5vw', xPercent: -25, yPercent: 0 }, '<');
   gsap
     .timeline({
       duration: 0.1,

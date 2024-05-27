@@ -68,7 +68,7 @@ if (loading) {
     )
     .to(
       '.video-1',
-      { scale: 1.1, opacity: 1, yPercent: 20, xPercent: -120 },
+      { scale: 1.1, opacity: 1, yPercent: 23, xPercent: -120 },
       '<'
     )
     .to(

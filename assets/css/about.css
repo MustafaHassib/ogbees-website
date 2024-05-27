@@ -259,7 +259,6 @@
   display: flex;
   gap: 5rem;
   flex-direction: column;
-  margin-top: 4rem;
 }
 @media (max-width: 575.98px) {
   .about-wrapper .vision-and-mission {

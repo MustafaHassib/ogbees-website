@@ -29,6 +29,8 @@
 }
 
 .packages-wrapper {
+  overflow-x: hidden;
+
   font-family: common.$font_extended;
   background-color: #00bbf9;
   position: relative;
@@ -399,7 +401,7 @@
         margin-top: -250px;
         min-height: 700px;
         @media (max-width: 575.98px) {
-          margin-top: -35%;
+          margin-top: -29%;
           min-height: 250px;
         }
         &:nth-child(even) {

@@ -256,7 +256,7 @@
 .home-wrapper #statistics .stats .state__count {
   line-height: 1;
   text-transform: uppercase;
-  font-size: 6vw;
+  font-size: 5vw;
   color: #ffffff;
   margin-top: 1rem;
 }
@@ -293,7 +293,7 @@
 .home-wrapper .why-trust {
   width: 95%;
   margin: 4rem auto 0;
-  padding: 2rem 0;
+  padding: 2rem 0.5rem;
   display: flex;
   gap: 0.5rem;
 }
@@ -673,6 +673,11 @@
     font-size: 1rem;
   }
 }
+@media (min-width: 1400.98px) {
+  .home-wrapper .packeges .packages-services .package__head__title {
+    font-size: 1.8rem;
+  }
+}
 .home-wrapper .packeges .packages-services .package__head__name, .home-wrapper .packeges .packages-services .package__head__provider {
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -681,12 +686,22 @@
   align-items: center;
   gap: 1rem;
 }
+@media (min-width: 1400.98px) {
+  .home-wrapper .packeges .packages-services .package__head__name, .home-wrapper .packeges .packages-services .package__head__provider {
+    font-size: 1.5rem;
+  }
+}
 .home-wrapper .packeges .packages-services .package__head__name {
   flex: 1;
 }
 .home-wrapper .packeges .packages-services .package__head__name span {
   font-size: 0.9rem;
   font-weight: 600;
+}
+@media (min-width: 1400.98px) {
+  .home-wrapper .packeges .packages-services .package__head__name span {
+    font-size: 1.5rem;
+  }
 }
 .home-wrapper .packeges .packages-services .package__head__provider img {
   width: 50px;
@@ -704,6 +719,11 @@
   font-weight: 600;
   font-size: 0.8rem;
 }
+@media (min-width: 1400.98px) {
+  .home-wrapper .packeges .packages-services .package__head__provider-info .package-count {
+    font-size: 1.5rem;
+  }
+}
 .home-wrapper .packeges .packages-services .package__head__provider-info .package-count span {
   color: #ff397e;
 }
@@ -713,6 +733,11 @@
   gap: 1rem;
   font-size: 0.8rem;
   font-weight: 600;
+}
+@media (min-width: 1400.98px) {
+  .home-wrapper .packeges .packages-services .package__head__provider-info .total {
+    font-size: 1.5rem;
+  }
 }
 .home-wrapper .packeges .packages-services .package__head__provider-info .total span {
   font-size: 1rem;
@@ -738,6 +763,11 @@
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
+}
+@media (min-width: 1400.98px) {
+  .home-wrapper .packeges .packages-services .package .whats-included__head__title {
+    font-size: 1.5rem;
+  }
 }
 .home-wrapper .packeges .packages-services .package .whats-included__head .toggle-collapse {
   border: 1px solid black;
@@ -766,6 +796,11 @@
   text-transform: uppercase;
   font-size: 12px;
 }
+@media (min-width: 1400.98px) {
+  .home-wrapper .packeges .packages-services .package .whats-included__body__title h4 {
+    font-size: 1.3rem;
+  }
+}
 .home-wrapper .packeges .packages-services .package .whats-included__body__details {
   display: flex;
   flex-direction: column;
@@ -779,6 +814,11 @@
   justify-content: space-between;
   font-size: 10px;
   text-transform: uppercase;
+}
+@media (min-width: 1400.98px) {
+  .home-wrapper .packeges .packages-services .package .whats-included__body__details .detail {
+    font-size: 1.2rem;
+  }
 }
 .home-wrapper .packeges .packages-services .package .whats-included__body__payment {
   border-top: 1px solid black;
@@ -796,11 +836,26 @@
   font-weight: 700;
   font-size: 0.9rem;
 }
+@media (min-width: 1400.98px) {
+  .home-wrapper .packeges .packages-services .package .whats-included__body__payment__info p {
+    font-size: 1.2rem;
+  }
+}
 .home-wrapper .packeges .packages-services .package .whats-included__body__payment__info .price {
   font-size: 1.2rem;
 }
+@media (min-width: 1400.98px) {
+  .home-wrapper .packeges .packages-services .package .whats-included__body__payment__info .price {
+    font-size: 1.5rem;
+  }
+}
 .home-wrapper .packeges .packages-services .package .whats-included__body__payment .down-payment {
   font-size: 0.8rem;
+}
+@media (min-width: 1400.98px) {
+  .home-wrapper .packeges .packages-services .package .whats-included__body__payment .down-payment {
+    font-size: 1.5rem;
+  }
 }
 .home-wrapper .packeges .packages-services .package .whats-included__body__payment .down-payment span {
   font-weight: 600;
@@ -832,6 +887,11 @@
   font-size: 0.8rem;
   font-weight: 800;
   text-decoration: none;
+}
+@media (min-width: 1400.98px) {
+  .home-wrapper .packeges .packages-services .package__footer .get-started {
+    font-size: 1.5rem;
+  }
 }
 .home-wrapper .packeges .packages-services .package-1 .get-started {
   background-color: #00dc71;

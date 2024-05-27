@@ -218,7 +218,7 @@
         &__count {
           line-height: 1;
           text-transform: uppercase;
-          font-size: 6vw;
+          font-size: 5vw;
           color: colors.$white;
           margin-top: 1rem;
           span {
@@ -255,7 +255,7 @@
   .why-trust {
     width: 95%;
     margin: 4rem auto 0;
-    padding: 2rem 0;
+    padding: 2rem 0.5rem;
     display: flex;
     gap: 0.5rem;
     @media (max-width: 575.98px) {
@@ -597,6 +597,9 @@
             @media (max-width: 575.98px) {
               font-size: 1rem;
             }
+            @media (min-width: 1400.98px) {
+              font-size: 1.8rem;
+            }
           }
           &__name,
           &__provider {
@@ -606,12 +609,18 @@
             display: flex;
             align-items: center;
             gap: 1rem;
+            @media (min-width: 1400.98px) {
+              font-size: 1.5rem;
+            }
           }
           &__name {
             flex: 1;
             span {
               font-size: 0.9rem;
               font-weight: 600;
+              @media (min-width: 1400.98px) {
+                font-size: 1.5rem;
+              }
             }
           }
 
@@ -631,6 +640,9 @@
               gap: 1rem;
               font-weight: 600;
               font-size: 0.8rem;
+              @media (min-width: 1400.98px) {
+                font-size: 1.5rem;
+              }
               span {
                 color: colors.$pink;
               }
@@ -641,6 +653,9 @@
               gap: 1rem;
               font-size: 0.8rem;
               font-weight: 600;
+              @media (min-width: 1400.98px) {
+                font-size: 1.5rem;
+              }
               span {
                 font-size: 1rem;
                 font-weight: 700;
@@ -664,6 +679,9 @@
               font-weight: 600;
               font-size: 14px;
               text-transform: uppercase;
+              @media (min-width: 1400.98px) {
+                font-size: 1.5rem;
+              }
             }
             .toggle-collapse {
               border: 1px solid black;
@@ -691,6 +709,9 @@
                 font-weight: 600;
                 text-transform: uppercase;
                 font-size: 12px;
+                @media (min-width: 1400.98px) {
+                  font-size: 1.3rem;
+                }
               }
             }
             &__details {
@@ -705,6 +726,9 @@
                 justify-content: space-between;
                 font-size: 10px;
                 text-transform: uppercase;
+                @media (min-width: 1400.98px) {
+                  font-size: 1.2rem;
+                }
               }
             }
             &__payment {
@@ -721,13 +745,22 @@
                 p {
                   font-weight: 700;
                   font-size: 0.9rem;
+                  @media (min-width: 1400.98px) {
+                    font-size: 1.2rem;
+                  }
                 }
                 .price {
                   font-size: 1.2rem;
+                  @media (min-width: 1400.98px) {
+                    font-size: 1.5rem;
+                  }
                 }
               }
               .down-payment {
                 font-size: 0.8rem;
+                @media (min-width: 1400.98px) {
+                  font-size: 1.5rem;
+                }
                 span {
                   font-weight: 600;
                   color: colors.$light_green;
@@ -761,6 +794,9 @@
             font-size: 0.8rem;
             font-weight: 800;
             text-decoration: none;
+            @media (min-width: 1400.98px) {
+              font-size: 1.5rem;
+            }
           }
         }
       }
