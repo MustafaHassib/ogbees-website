@@ -305,7 +305,7 @@
 @media (max-width: 575.98px) {
   .packages-wrapper .why-creator__body .video__cta {
     margin: auto;
-    font-size: 0.4rem;
+    font-size: 0.3rem;
     padding: 0.2rem 1.2rem;
     border-radius: 4px;
     transform: translateX(-10%);
@@ -391,6 +391,11 @@
     font-size: 3rem;
   }
 }
+@media (max-width: 450.98px) {
+  .packages-wrapper .why-creator__body .checkboxes__item__title {
+    font-size: 0.4rem;
+  }
+}
 .packages-wrapper .why-creator__body .checkboxes__item__desc {
   width: 100%;
   color: #ffffff;
@@ -400,6 +405,11 @@
 @media (max-width: 575.98px) {
   .packages-wrapper .why-creator__body .checkboxes__item__desc {
     font-size: 0.5rem;
+  }
+}
+@media (max-width: 450.98px) {
+  .packages-wrapper .why-creator__body .checkboxes__item__desc {
+    font-size: 0.4rem;
   }
 }
 @media (min-width: 1600.98px) {
@@ -412,7 +422,7 @@
 }
 @media (max-width: 575.98px) {
   .packages-wrapper .who-it-work {
-    margin-top: 2rem;
+    margin-top: 3.5rem;
   }
 }
 @media (max-width: 575.98px) {
@@ -433,6 +443,7 @@
 @media (max-width: 575.98px) {
   .packages-wrapper .who-it-work__title {
     font-size: 0.7rem;
+    padding-bottom: 1.5rem;
   }
 }
 .packages-wrapper .who-it-work__steps {
@@ -460,6 +471,11 @@
   .packages-wrapper .who-it-work__steps__step {
     margin-top: -29%;
     min-height: 250px;
+  }
+}
+@media (max-width: 450.98px) {
+  .packages-wrapper .who-it-work__steps__step {
+    margin-top: -35%;
   }
 }
 .packages-wrapper .who-it-work__steps__step:nth-child(even) {
@@ -596,7 +612,7 @@
 }
 @media (max-width: 575.98px) {
   .packages-wrapper .who-it-work__steps__step__body__subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 .packages-wrapper .who-it-work__steps__step__body__title {
@@ -605,7 +621,7 @@
 }
 @media (max-width: 575.98px) {
   .packages-wrapper .who-it-work__steps__step__body__title {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .packages-wrapper .who-it-work__steps__step__body__desc {
@@ -613,7 +629,7 @@
 }
 @media (max-width: 575.98px) {
   .packages-wrapper .who-it-work__steps__step__body__desc {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 .packages-wrapper .who-it-work__steps__step__img {
@@ -628,7 +644,7 @@
 @media (max-width: 575.98px) {
   .packages-wrapper .who-it-work__steps__step__img {
     flex: 0.5;
-    transform: translateY(3%) skewY(8.8deg);
+    transform: translateY(5%) skewY(8.8deg);
     flex-direction: column;
   }
 }

@@ -128,40 +128,36 @@ video {
         }
       }
       &__item {
-        position: relative;
-        padding-inline: 0.3rem;
-        @media (max-width: 800px) {
-          padding: 0.8rem 2.5rem;
-        }
-        &::after {
-          content: '';
-          position: absolute;
-          width: 0;
-          height: 3px;
-          background-color: colors.$white;
-          left: 0;
-          bottom: -0.5rem;
-          transition: colors.$main_transition;
-        }
-
-        &:hover {
-          &::after {
-            width: 100%;
-          }
-        }
         a {
+          position: relative;
+          display: inline-block;
           font-weight: 600;
           font-size: 0.9rem;
           color: colors.$white;
           text-decoration: none;
           text-transform: uppercase;
+          padding: 0.8rem 2rem;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: colors.$white;
+            left: 0;
+            bottom: -0.5rem;
+            transition: colors.$main_transition;
+          }
+          &:hover {
+            &::after {
+              width: 100%;
+            }
+          }
         }
       }
 
       &__btn {
         font-weight: 600;
         border: 1px solid colors.$white;
-        padding: 0.8rem 2.5rem;
         font-size: 0.9rem;
         text-transform: uppercase;
         border-radius: colors.$border_radius;
@@ -172,6 +168,8 @@ video {
           background-color: colors.$moov;
         }
         a {
+          display: inline-block;
+          padding: 0.8rem 2.5rem;
           color: colors.$pink;
           text-decoration: none;
         }
@@ -214,6 +212,11 @@ video {
     top: 30%;
     @media (max-width: 575.98px) {
       transform: skewY(4deg);
+      padding: 0.5rem 0;
+    }
+    @media (max-width: 450.98px) {
+      transform: skewY(7deg);
+      top: 25%;
     }
   }
 
@@ -227,6 +230,10 @@ video {
     width: 110%;
     @media (max-width: 575.98px) {
       transform: skewY(-8deg);
+      padding: 0.5rem 0;
+    }
+    @media (max-width: 450.98px) {
+      transform: skewY(-12deg);
     }
   }
   .splide__slide {
@@ -412,7 +419,7 @@ video {
   width: 90vw;
   margin: 10rem auto;
   @media (max-width: 575.98px) {
-    margin: 2rem auto;
+    margin: 4rem auto;
   }
   .main_title {
     margin-bottom: 0;

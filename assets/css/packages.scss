@@ -264,9 +264,10 @@
           left: 20%;
           transform: translateX(-3%);
           z-index: 1000;
+
           @media (max-width: 575.98px) {
             margin: auto;
-            font-size: 0.4rem;
+            font-size: 0.3rem;
             padding: 0.2rem 1.2rem;
             border-radius: 4px;
             transform: translateX(-10%);
@@ -341,6 +342,9 @@
             @media (min-width: 1600.98px) {
               font-size: 3rem;
             }
+            @media (max-width: 450.98px) {
+              font-size: 0.4rem;
+            }
           }
           &__desc {
             width: 100%;
@@ -349,6 +353,9 @@
             font-weight: 400;
             @media (max-width: 575.98px) {
               font-size: 0.5rem;
+            }
+            @media (max-width: 450.98px) {
+              font-size: 0.4rem;
             }
             @media (min-width: 1600.98px) {
               font-size: 1.5rem;
@@ -362,7 +369,7 @@
   .who-it-work {
     margin-top: 8rem;
     @media (max-width: 575.98px) {
-      margin-top: 2rem;
+      margin-top: 3.5rem;
     }
     .main_btn {
       @media (max-width: 575.98px) {
@@ -380,6 +387,7 @@
       text-align: center;
       @media (max-width: 575.98px) {
         font-size: 0.7rem;
+        padding-bottom: 1.5rem;
       }
     }
 
@@ -403,6 +411,9 @@
         @media (max-width: 575.98px) {
           margin-top: -29%;
           min-height: 250px;
+        }
+        @media (max-width: 450.98px) {
+          margin-top: -35%;
         }
         &:nth-child(even) {
           flex-direction: row-reverse;
@@ -519,20 +530,20 @@
             font-weight: 600;
             font-size: 3rem;
             @media (max-width: 575.98px) {
-              font-size: 1.2rem;
+              font-size: 1.1rem;
             }
           }
           &__title {
             font-weight: 700;
             font-size: 4rem;
             @media (max-width: 575.98px) {
-              font-size: 1rem;
+              font-size: 0.9rem;
             }
           }
           &__desc {
             font-size: 2rem;
             @media (max-width: 575.98px) {
-              font-size: 0.9rem;
+              font-size: 0.8rem;
             }
           }
         }
@@ -546,7 +557,7 @@
           transform: translateY(10%) skewY(8.8deg);
           @media (max-width: 575.98px) {
             flex: 0.5;
-            transform: translateY(3%) skewY(8.8deg);
+            transform: translateY(5%) skewY(8.8deg);
             flex-direction: column;
           }
           img {

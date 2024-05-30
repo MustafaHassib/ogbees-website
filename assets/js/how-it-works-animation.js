@@ -25,7 +25,7 @@ mm.add('(max-width: 799px)', () => {
       duration: 0.1,
       scrollTrigger: {
         trigger: '.step-1',
-        start: '0%',
+        start: '0% 100%',
         end: 'bottom center',
         toggleActions: 'play none none reverse',
         scrub: true,
